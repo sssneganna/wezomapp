@@ -1,0 +1,27 @@
+.footer-content {
+  display: flex;
+  &__left {
+    width: 26%;
+  }
+
+  &__right {
+    width: 74%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .footer-content {
+    flex-direction: column-reverse;
+
+    &__left {
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    &__right {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}

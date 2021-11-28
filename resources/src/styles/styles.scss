@@ -1,0 +1,61 @@
+/*Common*/
+
+@import "./common/base.scss";
+@import "./common/buttons.scss";
+@import "./common/link.scss";
+@import "./common/arrow.scss";
+@import "./common/dots.scss";
+@import "./common/rating.scss";
+@import "./common/stickers.scss";
+@import "./common/variables.scss";
+@import "./common/container.scss";
+@import "./common/layout.scss";
+@import "./common/triangle.scss";
+@import "./common/modal-background.scss";
+@import "./common/navigation-toggle.scss";
+
+/*Header*/
+
+@import "./Header/header.scss";
+@import "./Header/search.scss";
+@import "./Header/city-button.scss";
+@import "./Header/language.scss";
+@import "./Header/phone.scss";
+@import "./Header/logo.scss";
+@import "./Header/menu-header.scss";
+@import "./Header/mobile-menu.scss";
+@import "./Header/global-navigation.scss";
+@import "./Header/header-buttons.scss";
+@import "./Header/global-nav.scss";
+@import "./Header/nav.scss";
+@import "./Header/sub-menu.scss";
+
+/*Main*/
+
+@import "./Main/Blog/main-container.scss";
+@import "./Main/Benefits/benefits.scss";
+@import "./Main/Discounts/discounts.scss";
+@import "./Main/Blog/search-blog.scss";
+@import "./Main/Seo/seo.scss";
+@import "./Main/Best Deals/best-deals.scss";
+@import "./Main/Best Deals/card-product.scss";
+@import "./Main/Blog/blog.scss";
+
+@import "./Main/Blog/blog-gallery.scss";
+
+/*Footer*/
+
+@import "./Footer/chat.scss";
+@import "./Footer/footer-navigation.scss";
+@import "./Footer/footer-content.scss";
+@import "./Footer/footer-left.scss";
+@import "./Footer/footer-right.scss";
+@import "./Footer/footer-communication.scss";
+@import "./Footer/contacts.scss";
+@import "./Footer/sub-footer.scss";
+@import "./Footer/payment.scss";
+@import "./Footer/navigation.scss";
+@import "./Footer/communication.scss";
+@import "./Footer/social-icon.scss";
+@import "./Footer/footer.scss";
+@import "./Footer/up-button.scss";

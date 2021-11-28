@@ -1,0 +1,26 @@
+/*Button*/
+.chat {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: var(--color-white-text);
+  
+    &__icon {
+      color: var(--color-orange);
+      margin-right: 10px;
+    }
+  }
+  
+  .chat:hover .chat__icon,
+  .chat:focus .chat__icon,
+  .chat:active .chat__icon {
+    color: var(--color-white);
+    transition: color 0.3s;
+  }
+  

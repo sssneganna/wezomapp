@@ -1,0 +1,22 @@
+.footer-right {
+  &__top {
+    margin-bottom: 40px;
+  }
+
+  &__main {
+    margin-bottom: 27px;
+  }
+
+  &__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .footer-right {
+    &__bottom {
+      align-items: flex-end;
+      flex-wrap: wrap;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  width: 100%;
+
+  &__header {
+    width: 100%;
+  }
+
+  &__main {
+    width: 100%;
+    padding-top: 50px;
+    overflow: hidden;
+  }
+
+  &__footer {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .layout {
+    &__main {
+      padding-top: 30px;
+    }
+  }
+}

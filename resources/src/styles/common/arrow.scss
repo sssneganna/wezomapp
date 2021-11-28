@@ -1,0 +1,70 @@
+/*Arrow*/
+.arrow {
+  --arrow-size: 12px;
+  position: relative;
+  border-radius: 5px 5px;
+  width: var(--arrow-size);
+  height: var(--arrow-size);
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow::before {
+  --size-arrow: 6px;
+  width: var(--size-arrow);
+  height: var(--size-arrow);
+  content: "";
+  display: block;
+  border-bottom: 2px solid var(--color-white);
+  border-right: 2px solid var(--color-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.arrow--medium::before {
+  --size-arrow: 5px;
+}
+
+.arrow--small::before {
+  --size-arrow: 4px;
+}
+
+.arrow--prev::before {
+  transform: translateY(-50%) translateX(-50%) rotate(135deg);
+}
+
+.arrow--next::before {
+  transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+}
+
+.arrow--next-light-grey::before {
+  transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+  border-bottom: 2px solid var(--link-bg);
+  border-right: 2px solid var(--link-bg);
+}
+
+.arrow--next-green::before {
+  transform: translateY(-50%) translateX(-50%) rotate(-45deg) skew(10deg, 10deg);
+  border-bottom: 2px solid var(--color-logo);
+  border-right: 2px solid var(--color-logo);
+}
+
+.arrow--up::before {
+  transform: translateY(-50%) translateX(-50%) rotate(-135deg);
+}
+
+.arrow--down::before {
+  transform: translateY(-50%) translateX(-50%) rotate(45deg);
+  border-bottom: 2px solid var(--color-grey-text);
+  border-right: 2px solid var(--color-grey-text);
+}
+
+.arrow--down:hover::before,
+.arrow--down:focus::before,
+.arrow--down:active::before {
+  border-bottom: 2px solid var(--color-dark-blue-text);
+  border-right: 2px solid var(--color-dark-blue-text);
+}

@@ -1,0 +1,35 @@
+/*Stars*/
+.rating {
+  display: flex;
+
+  &__stars {
+    --size-stars: 14px;
+    display: flex;
+    position: relative;
+    width: var(--size-stars);
+    height: var(--size-stars);
+    background: transparent;
+    border: none;
+  }
+
+  &__stars::before {
+    width: var(--size-stars);
+    height: var(--size-stars);
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10%);
+    content: "★";
+    color: var(--color-grey-border);
+  }
+  &--checked::before {
+    color: #e77e42;
+  }
+
+  &__number {
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--link-bg);
+    margin-left: 3px;
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "name": "Practice2021",
+  "version": "1.0.0",
+  "description": "\"# practice\"",
+  "main": "index.js",
+  "dependencies": {
+    "@wezom/browserizr": "^9.0.0",
+    "babel-loader-exclude-node-modules-except": "^1.2.1",
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.15.0",
+    "axios": "^0.19",
+    "babel-loader": "^8.2.3",
+    "bootstrap": "^4.1.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.4.0",
+    "http-server": "^14.0.0",
+    "laravel-mix": "^4.0.7",
+    "lodash": "^4.17.13",
+    "mini-css-extract-plugin": "^2.4.3",
+    "popper.js": "^1.12",
+    "postcss": "^8.3.11",
+    "postcss-loader": "^6.2.0",
+    "resolve-url-loader": "^2.3.1",
+    "sass": "^1.43.3",
+    "sass-loader": "^12.2.0",
+    "source-map-loader": "^3.0.0",
+    "style-loader": "^3.3.1",
+    "svg-inline-loader": "^0.8.2",
+    "svg-spritemap-webpack-plugin": "^4.4.0",
+    "vue": "^2.5.17",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "develop": "webpack --watch",
+    "serve": "http-server -c-1 ./",
+    "development": "cross-env NODE_ENV=development webpack --watch",
+    "production": "cross-env NODE_ENV=production webpack",
+    "dev": "npm run development",
+    "developments": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "productions": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sssneganna/practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sssneganna/practice/issues"
+  },
+  "homepage": "https://github.com/sssneganna/practice#readme"
+}

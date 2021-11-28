@@ -1,0 +1,124 @@
+/*Button*/
+.button {
+  --btn-size: 32px;
+  border-radius: 50%;
+  width: var(--btn-size);
+  height: var(--btn-size);
+  background: grey;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+
+  &--transparent {
+    background: transparent;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(84, 143, 199, 0.15);
+  }
+
+  &--transparent-hover:hover,
+  &--transparent:focus,
+  &--transparent:active {
+    border: 1px solid rgb(224, 224, 224, 0.3);
+    background: rgb(224, 224, 224, 0.3);
+    box-shadow: 0px 2px 4px rgba(84, 143, 199, 0.15);
+    transition: all 0.3s;
+  }
+
+  &--filled-grey {
+    border: 1px solid var(--color-grey-border);
+    background: var(--color-grey-border);
+  }
+
+  &--filled-grey:hover {
+    border: 1px solid var(--color-orange);
+    background: var(--color-orange);
+    opacity: 0.9;
+  }
+
+  &--filled-grey:focus,
+  &--filled-grey:active {
+    border: 1px solid var(--color-orange);
+    background: var(--color-orange);
+  }
+
+  &--filled-grey.active {
+    border: 1px solid var(--color-orange);
+    background: var(--color-orange);
+  }
+
+  &--filled-black {
+    border: 3px solid #ffffff;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  &--filled-black:hover,
+  &--filled-black:focus,
+  &--filled-black:active {
+    transition: background 0.3s;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  &--filled-white {
+    border: none;
+    background: rgb(255, 255, 255, 0.2);
+  }
+
+  &--filled-white:hover,
+  &--filled-white:focus,
+  &--filled-white:active {
+    border: none;
+    background: rgb(255, 255, 255, 0.5);
+  }
+
+  &--square {
+    border-radius: 5px 5px;
+    margin-right: 8px;
+  }
+
+  &--square:last-child {
+    margin-right: 0;
+  }
+
+  &--size-smallest {
+    --btn-size: 12px;
+  }
+
+  &--size-small {
+    --btn-size: 32px;
+  }
+
+  &--size-medium {
+    --btn-size: 48px;
+  }
+
+  &--size-medium-big {
+    --btn-size: 60px;
+  }
+
+  &--size-large {
+    --btn-size: 80px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .button {
+    &--dark {
+      background: rgb(9 0 0 / 40%);
+    }
+    &--dark:hover,
+    &--dark:focus,
+    &--dark:active {
+      background: rgb(9 0 0 / 60%);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    &--size-large {
+      --btn-size: 62px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.communication {
+  display: flex;
+  margin-right: -39px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: -10px;
+
+  &__item {
+    padding-right: 39px;
+    padding-bottom: 10px;
+  }
+}

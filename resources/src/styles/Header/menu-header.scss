@@ -1,0 +1,31 @@
+/*Menu*/
+@at-root .menu {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 19px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-grey-text);
+  }
+
+  &__link:hover {
+    color: var(--color-dark-blue-text);
+    transition: color 0.3s;
+  }
+
+  &__link.active {
+    color: var(--color-dark-blue-text);
+    transition: all 0.3s;
+  }
+}

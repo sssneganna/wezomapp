@@ -1,0 +1,17 @@
+/*Logo*/
+@at-root .logo {
+  &__icon {
+    color: var(--color-logo);
+  }
+
+  &__icon:hover {
+    color: var(--color-green);
+    transition: color 0.3s;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .logo--none {
+    display: none;
+  }
+}

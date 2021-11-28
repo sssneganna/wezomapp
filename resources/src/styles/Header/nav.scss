@@ -1,0 +1,125 @@
+.nav {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  padding-top: 12px;
+  flex-direction: column;
+
+  &__item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 20px 22px 10px 23px;
+    margin-bottom: 5px;
+  }
+
+  &__item:hover &__icon {
+    color: var(--color-logo);
+    transition: color 0.3s;
+  }
+
+  &__item:hover .arrow--next-light-grey::before {
+    border-bottom: 2px solid var(--color-logo);
+    border-right: 2px solid var(--color-logo);
+    transition: all 0.3s;
+  }
+
+  &__item:hover {
+    background-color: var(--color-white);
+    transition: background-color 0.3s;
+  }
+
+  &__item:hover &__link {
+    color: var(--color-logo);
+    transition: color 0.3s;
+  }
+
+  &__item--active &__icon {
+    color: var(--color-logo);
+    transition: color 0.3s;
+  }
+
+  &__item--active .arrow--next-light-grey::before {
+    border-bottom: 2px solid var(--color-logo);
+    border-right: 2px solid var(--color-logo);
+  }
+
+  &__item--active {
+    background-color: var(--color-white);
+    transition: background-color 0.3s;
+  }
+
+  &__item--active &__link {
+    color: var(--color-logo);
+    transition: color 0.3s;
+  }
+
+  &__button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: 17px;
+    color: var(--color-dark-blue-text);
+  }
+
+  &__icon--size-dog {
+    width: 25px;
+    height: 27px;
+  }
+
+  &__icon--size-cat {
+    width: 25px;
+    height: 25px;
+  }
+
+  &__icon--size-birds {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__icon--size-star {
+    width: 24px;
+    height: 22px;
+  }
+
+  &__icon--size-procent {
+    width: 20px;
+    height: 22px;
+  }
+
+  &__icon--size-rodents {
+    width: 21px;
+    height: 27px;
+  }
+
+  &__link {
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: var(--color-dark-blue-text);
+  }
+  &__item:hover &__dropdown-menu {
+    display: block;
+  }
+  &__dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 450px;
+    top: 12px;
+    box-shadow: 8px 5px 5px rgba(18, 33, 63, 0.05);
+    height: 669px;
+    background: var(--color-white);
+    z-index: 2500;
+  }
+}

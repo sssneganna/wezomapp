@@ -1,0 +1,56 @@
+/*City*/
+@at-root .city {
+  background: transparent;
+  border: none;
+
+  &__text {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-grey-text);
+    border-bottom: 1px dashed #7b94b0;
+    padding: 4px 0;
+  }
+
+  &__text:hover,
+  &__text:focus,
+  &__text:active {
+    color: var(--color-dark-blue-text);
+    transition: color 0.3s;
+  }
+
+  &__text--white {
+    color: var(--color-white);
+    border-bottom: 1px dashed var(--color-white);
+  }
+
+  &__text--white:hover,
+  &__text--white:focus,
+  &__text--white:active {
+    color: var(--color-white);
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+
+  &__icon {
+    color: var(--color-grey-text);
+  }
+
+  &__icon--white {
+    color: var(--color-white);
+  }
+
+  &__icon--white:hover,
+  &__icon--white:focus,
+  &__icon--white:active {
+    color: var(--color-white);
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
+
+  &__icon:hover,
+  &__icon:focus,
+  &__icon:active {
+    color: var(--color-dark-blue-text);
+    transition: color 0.3s;
+  }
+}

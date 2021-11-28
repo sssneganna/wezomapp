@@ -1,0 +1,12 @@
+/*Payment*/
+@at-root .payment {
+    &__list {
+      display: flex;
+      margin-right: -16px;
+    }
+  
+    &__item {
+      padding-right: 16px;
+    }
+  }
+  

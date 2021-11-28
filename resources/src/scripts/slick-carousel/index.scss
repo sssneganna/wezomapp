@@ -1,0 +1,32 @@
+@import "~slick-carousel/slick/slick.scss";
+@import "~slick-carousel/slick/slick-theme.scss";
+
+.slick-dots {
+  bottom: -28px;
+}
+
+.slick-dots li {
+  margin: 0 1px;
+}
+
+.slick-dots li button {
+  padding: 1px;
+}
+
+.slick-dots li button:before {
+  font-size: 33px;
+  opacity: 1;
+  color: var(--color-grey-border);
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  color: var(--color-grey-text);
+}
+.slick-dots li.slick-active button:before {
+  color: var(--color-green);
+}
+
+.slick-slide {
+  padding: 20px 10px;
+}

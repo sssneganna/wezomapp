@@ -1,0 +1,29 @@
+.up-btn {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    font-size: 13px;
+    line-height: 15px;
+    text-align: right;
+    color: var(--color-white-text);
+    opacity: 0.6;
+  }
+
+  &__button {
+    margin-left: 16px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .up-btn {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 2000;
+
+    &__text {
+      display: none;
+    }
+  }
+}

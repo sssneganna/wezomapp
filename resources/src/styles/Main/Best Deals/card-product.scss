@@ -1,0 +1,156 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -35px;
+  margin-bottom: -25px;
+  margin-left: -15px;
+  margin-right: -15px;
+
+  &__item {
+    display: flex;
+    padding: 5px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  width: 100%;
+
+  &__image {
+    background: var(--color-white);
+    border: 1px solid var(--color-grey-border);
+    border-radius: 12px;
+    margin-bottom: 16px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__image img {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-dark-blue-text);
+    min-height: 48px;
+    margin-bottom: 27px;
+  }
+
+  &__text:hover {
+    color: var(--color-grey-text);
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 14px;
+  }
+}
+.card-price {
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  &__profitable {
+    color: var(--color-grey-text);
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    margin-left: 4px;
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+  }
+
+  &__old {
+    text-decoration: line-through;
+    font-size: 13px;
+    line-height: 140%;
+    color: var(--color-grey-text);
+    margin-right: 4px;
+    display: flex;
+    flex-shrink: 0;
+    min-height: 18px;
+  }
+
+  &__new {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--color-dark-blue-text);
+    display: flex;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .card-price {
+    &__new {
+      font-size: 19px;
+    }
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .cards {
+    &__item {
+      border: 1px solid var(--color-grey-border);
+      border-radius: 12px;
+      box-shadow: 0px 4px 12px rgba(18, 33, 63, 0.05);
+      padding: 5px 5px 16px 5px;
+    }
+  }
+  .card {
+    &__image {
+      border: none;
+    }
+    &__text {
+      margin-bottom: 8px;
+      min-height: 65px;
+    }
+  }
+}
+
+@media screen and (max-width: 687px) {
+  .cards {
+    &__item:hover {
+      transform: none;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .card-price {
+    &__bottom {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .card {
+    &__text {
+      min-height: 84px;
+    }
+  }
+
+  .card-price {
+    &__new {
+      font-size: 17px;
+    }
+  }
+}

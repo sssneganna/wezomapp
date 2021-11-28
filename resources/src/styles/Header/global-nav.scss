@@ -1,0 +1,137 @@
+.global-nav {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    display: flex;
+    margin-right: 52px;
+    align-items: center;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__item:nth-of-type(4) {
+    margin-right: 39px;
+  }
+
+  &__item:nth-of-type(1) {
+    margin-right: 39px;
+  }
+
+  &__link {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--color-dark-blue-text);
+  }
+
+  &__link:hover {
+    color: var(--color-logo);
+    transition: color 0.3s;
+  }
+
+  &__link--active {
+    color: var(--color-logo);
+  }
+
+  &__arrow {
+    margin-left: 8px;
+  }
+
+  &__dropdown {
+    display: flex;
+    align-items: center;
+  }
+
+  &__dropdown:hover,
+  &__dropdown:focus &__dropdown-content {
+    display: flex;
+  }
+
+  &__dropdown:hover &__link {
+    color: var(--color-logo);
+    transition: color 0.3s;
+  }
+
+  &__dropdown-content {
+    position: absolute;
+    top: 104px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2500;
+  }
+
+  &__dropdown-menu {
+    width: 450px;
+    min-height: 681px;
+    background: #f4f5f8;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    box-shadow: 0px 4px 12px rgba(18, 33, 63, 0.05);
+  }
+
+  &--mobile {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px;
+    overflow: hidden;
+  }
+
+  &__item--mobile {
+    width: 100%;
+
+    margin-bottom: 5px;
+  }
+
+  &__link--mobile {
+    width: 100%;
+    color: var(--color-dark-blue-text);
+    font-size: 25px;
+    line-height: 22px;
+    padding: 10px;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 700ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  &__link--mobile:hover {
+    background: rgba(1, 1, 1, 0.3);
+    color: var(--color-white-text);
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+
+  &__link--mobile.active {
+    background: rgba(1, 1, 1, 0.3);
+    color: var(--color-white-text);
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .global-nav {
+    &--desktop {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .global-nav {
+    &__item--mobile {
+      margin-bottom: 3px;
+    }
+    &__link--mobile {
+      padding: 5px;
+      font-size: 23px;
+      line-height: 20px;
+    }
+  }
+}

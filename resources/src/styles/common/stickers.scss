@@ -1,0 +1,50 @@
+.stickers {
+  display: flex;
+  flex-direction: column;
+  top: 16px;
+  position: absolute;
+  z-index: 200;
+  left: 16px;
+}
+
+.sticker {
+  background: var(--color-grey-text);
+  border-radius: 3px;
+  padding: 4px 6px 3px;
+  color: var(--color-white-text);
+  text-transform: uppercase;
+  font-family: Roboto Condensed;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+
+  justify-content: center;
+  margin-bottom: 6px;
+
+  &--turquoise {
+    background: #3bc5ad;
+    order: 0;
+  }
+
+  &--violet {
+    order: 0;
+
+    background: #8d58e3;
+  }
+
+  &--pink {
+    background: #e95471;
+    order: 1;
+  }
+
+  &--orange {
+    background: rgba(255, 175, 0, 1);
+    order: 0;
+  }
+
+  &--blue {
+    background: rgba(58, 158, 253, 1);
+    order: 0;
+  }
+}

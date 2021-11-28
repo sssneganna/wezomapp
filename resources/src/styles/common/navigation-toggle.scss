@@ -1,0 +1,43 @@
+/*Navigation toggle*/
+.nav-toggle {
+  --size-toggle: 40px;
+  display: none;
+  width: var(--size-toggle);
+  height: var(--size-toggle);
+  border: none;
+  position: relative;
+  background: transparent;
+}
+
+.ham {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 500ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms;
+  stroke: var(--color-dark-blue-text);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+
+@media screen and (max-width: 1300px) {
+  .nav-toggle {
+    display: block;
+  }
+}

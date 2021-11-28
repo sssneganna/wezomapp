@@ -1,0 +1,47 @@
+.dots {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  &__item {
+    --size-button-dots: 8px;
+
+    width: var(--size-button-dots);
+    height: var(--size-button-dots);
+    display: flex;
+    margin-right: 8px;
+  }
+
+  &__button {
+    display: flex;
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border: none;
+  }
+  &__button:before {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    border-radius: 50%;
+    background: var(--color-grey-border);
+  }
+
+  &__button:hover::before {
+    background: var(--color-grey-text);
+  }
+
+  &__button:focus::before,
+  &__button:active::before {
+    background: var(--color-green);
+  }
+
+  &__button.active::before {
+    background: var(--color-green);
+  }
+}
