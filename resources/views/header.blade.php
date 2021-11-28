@@ -88,16 +88,17 @@
                                         </button>
                                         <ul class="global-nav global-nav--desktop">
                                             <li class="global-nav__item">
-                                                <div class="global-nav__dropdown">
+                                                
                                                 <a href="#" class="global-nav__link">Товары по
                                                     питомцам</a>
                                                     <div class="global-nav__arrow"> <span class="arrow arrow-small arrow--color-grey arrow--down"></span></div>
                                                     <div class="global-nav__dropdown-content">
-                                                        <div class="container container--big container--none-padding">
+                                                       
+                                                          
                                                             <div class="global-nav__dropdown-menu">
                                                         <ul class="nav">
-                                                            <li class="nav__item nav__item--active">
-                                                                <div class="nav__button">
+                                                            <li class="nav__item">
+                                                             
                                                                  <div class="nav__box">
                                                                  <svg class="nav__icon nav__icon--size-dog">
                                         <use xlink:href="./dist/spritemap.svg#sprite-icon-menu-dog">
@@ -107,9 +108,8 @@
                                                                  </div>  
                                                                        <div class="nav__arrow">
                                                                     <span class="arrow arrow-small arrow--next-light-grey"></span>
-                                                                    </div>
-                                                                 <div class="nav__dropdown-menu">
-                                                                     <div class="sub-menu-container">
+                                                                    </div> 
+                                                                 <div class="sub-menu-container">
                                                                          <div class="sub-menu-container__top">
                                                                          <ul class="sub-menu">
                                                                          <li class="sub-menu__column">
@@ -302,17 +302,14 @@
                                                                    <a class="sub-menu-container__link" href="#">
                                                                    <img src=" ./assets/sub-menu-baner.png" alt="dog">
                                                                    </a>
-                                                              
-                                                                     <img class="sub-menu-container__image"src=" ./assets/sub-menu-dog.png" alt="dog">
+                                                              <div class="sub-menu-container__image">
+                                                              <img src=" ./assets/sub-menu-dog.png" alt="dog">
+                                                              </div>
                                                                </div>
-                                                                    
-                                                                     </div>
-                                                                     
-                                                                 </div>
-                                                                </div>
+                                                                 </div>    
                                                             </li>
                                                             <li class="nav__item">
-                                                                <div class="nav__button">
+                                                              
                                                                  <div class="nav__box">
                                                                  <svg class="nav__icon nav__icon--size-cat">
                                         <use xlink:href="./dist/spritemap.svg#sprite-icon-menu-cat">
@@ -323,11 +320,208 @@
                                                                        <div class="nav__arrow">
                                                                     <span class="arrow arrow-small arrow--next-light-grey"></span>
                                                                     </div>
-                                                                 <div class="nav__dropdown-menu"></div>
-                                                                </div>
+                                                                    <div class="sub-menu-container">
+                                                                         <div class="sub-menu-container__top">
+                                                                         <ul class="sub-menu">
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Корм для котов</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Сухой корм</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Консервы</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Ветеринарные диеты </a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Заменители молока</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li>
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Игрушки</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Интерактивные</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Удочки и дразнилки</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Мышки </a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Мячики</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li>
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Здоровье</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Средства от блох и клещей</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Витамины и добавки</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Средства от глистов</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Ветеринарные препараты</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li>
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Одежда и обувь</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Комбинезоны</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">  Костюмы</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Дождевики</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Свитера</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li>
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Товары для дома</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Домики</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Когтеточки</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Спальные места</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Миски и поилки</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li>
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Лакомства</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Кости</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Печенье</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Для дрессировки</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Сушеные лакомства</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li>
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Уход</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Средства по уходу</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Инструменты для груминга</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Туалеты и пеленки</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                         </li> 
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Косметика</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Шампуни</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Духи</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Кондиционеры и спреи</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Профессиональная и выставочная косметика</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li> 
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Амуниция</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Поводки</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Ошейники</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Шлейки</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Рулетки</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li> 
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Путешествия</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Сумки и переноски</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Автоаксессуары</a>
+                                                                                </li>
+                                                                         </li> 
+                                                                     </ul>
+                                                                         </div>
+                                                               <div class="sub-menu-container__bottom">
+                                                                   <a class="sub-menu-container__link" href="#">
+                                                                   <img src=" ./assets/sub-menu-baner.png" alt="dog">
+                                                                   </a>
+                                                              <div class="sub-menu-container__image">
+                                                              <img src=" ./assets/sub-menu-dog.png" alt="dog">
+                                                              </div>
+                                                               </div>
+                                                                 </div>    
+                                                               
                                                             </li>
                                                             <li class="nav__item">
-                                                                <div class="nav__button">
+                                                                
                                                                  <div class="nav__box">
                                                                  <svg class="nav__icon nav__icon--size-birds">
                                         <use xlink:href="./dist/spritemap.svg#sprite-icon-menu-birds">
@@ -338,11 +532,208 @@
                                                                        <div class="nav__arrow">
                                                                     <span class="arrow arrow-small arrow--next-light-grey"></span>
                                                                     </div>
-                                                                 <div class="nav__dropdown-menu"></div>
-                                                                </div>
+                                                                    <div class="sub-menu-container">
+                                                                         <div class="sub-menu-container__top">
+                                                                         <ul class="sub-menu">
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Корм для птиц</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Сухой корм</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Консервы</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Ветеринарные диеты </a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Заменители молока</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li>
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Игрушки</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Интерактивные</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Удочки и дразнилки</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Мышки </a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Мячики</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li>
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Здоровье</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Средства от блох и клещей</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Витамины и добавки</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Средства от глистов</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Ветеринарные препараты</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li>
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Одежда и обувь</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Комбинезоны</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">  Костюмы</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Дождевики</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Свитера</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li>
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Товары для дома</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Домики</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Когтеточки</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Спальные места</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Миски и поилки</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li>
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Лакомства</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Кости</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Печенье</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Для дрессировки</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Сушеные лакомства</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li>
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Уход</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Средства по уходу</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Инструменты для груминга</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Туалеты и пеленки</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                         </li> 
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Косметика</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Шампуни</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Духи</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Кондиционеры и спреи</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Профессиональная и выставочная косметика</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li> 
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Амуниция</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Поводки</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Ошейники</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Шлейки</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Рулетки</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li> 
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Путешествия</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Сумки и переноски</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Автоаксессуары</a>
+                                                                                </li>
+                                                                         </li> 
+                                                                     </ul>
+                                                                         </div>
+                                                               <div class="sub-menu-container__bottom">
+                                                                   <a class="sub-menu-container__link" href="#">
+                                                                   <img src=" ./assets/sub-menu-baner.png" alt="dog">
+                                                                   </a>
+                                                              <div class="sub-menu-container__image">
+                                                              <img src=" ./assets/sub-menu-dog.png" alt="dog">
+                                                              </div>
+                                                               </div>
+                                                                 </div>    
+                                                               
                                                             </li>
                                                             <li class="nav__item">
-                                                                <div class="nav__button">
+                                                                
                                                                  <div class="nav__box">
                                                                  <svg class="nav__icon nav__icon--size-rodents">
                                         <use xlink:href="./dist/spritemap.svg#sprite-icon-menu-rodents">
@@ -353,11 +744,208 @@
                                                                        <div class="nav__arrow">
                                                                     <span class="arrow arrow-small arrow--next-light-grey"></span>
                                                                     </div>
-                                                                 <div class="nav__dropdown-menu"></div>
-                                                                </div>
+                                                                    <div class="sub-menu-container">
+                                                                         <div class="sub-menu-container__top">
+                                                                         <ul class="sub-menu">
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Корм для грызунов</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Сухой корм</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Консервы</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Ветеринарные диеты </a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Заменители молока</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li>
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Игрушки</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Интерактивные</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Удочки и дразнилки</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Мышки </a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Мячики</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li>
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Здоровье</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Средства от блох и клещей</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Витамины и добавки</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Средства от глистов</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Ветеринарные препараты</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li>
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Одежда и обувь</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Комбинезоны</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">  Костюмы</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Дождевики</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Свитера</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li>
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Товары для дома</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Домики</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Когтеточки</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Спальные места</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Миски и поилки</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li>
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Лакомства</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Кости</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Печенье</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Для дрессировки</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Сушеные лакомства</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li>
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Уход</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Средства по уходу</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Инструменты для груминга</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Туалеты и пеленки</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                         </li> 
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Косметика</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Шампуни</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Духи</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Кондиционеры и спреи</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Профессиональная и выставочная косметика</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li> 
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Амуниция</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Поводки</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Ошейники</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Шлейки</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Рулетки</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <button class="sub-menu__button"><span>Смотреть все</span>
+                                                                        <span class="arrow arrow--small arrow--next-green"></span></button>
+                                                                        
+                                                                         </li> 
+                                                                         <li class="sub-menu__column">
+                                                                             <div class="sub-menu__title">Путешествия</div>
+                                                                            <ul class="sub-menu__list">
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link">Сумки и переноски</a>
+                                                                                </li>
+                                                                                <li class="sub-menu__item">
+                                                                                    <a href="#" class="sub-menu__link"> Автоаксессуары</a>
+                                                                                </li>
+                                                                         </li> 
+                                                                     </ul>
+                                                                         </div>
+                                                               <div class="sub-menu-container__bottom">
+                                                                   <a class="sub-menu-container__link" href="#">
+                                                                   <img src=" ./assets/sub-menu-baner.png" alt="dog">
+                                                                   </a>
+                                                              <div class="sub-menu-container__image">
+                                                              <img src=" ./assets/sub-menu-dog.png" alt="dog">
+                                                              </div>
+                                                               </div>
+                                                                 </div>    
+                                                                
                                                             </li>
                                                             <li class="nav__item">
-                                                                <div class="nav__button">
+                                                               
                                                                  <div class="nav__box">
                                                                  <svg class="nav__icon nav__icon--size-star">
                                         <use xlink:href="./dist/spritemap.svg#sprite-icon-menu-star">
@@ -365,10 +953,10 @@
                                     </svg>                           
                                                                     <a href="#" class="nav__link">Новинки</a>
                                                                  </div>  
-                                                                </div>
+                                                               
                                                             </li>
                                                             <li class="nav__item">
-                                                                <div class="nav__button">
+                                                               
                                                                  <div class="nav__box">
                                                                  <svg class="nav__icon nav__icon--size-procent">
                                         <use xlink:href="./dist/spritemap.svg#sprite-icon-menu-procent">
@@ -376,13 +964,12 @@
                                     </svg>                           
                                                                     <a href="#" class="nav__link">Акции</a>
                                                                  </div>  
-                                                                </div>
+                                                              
                                                             </li>
                                                         </ul>
 </div>
 </div>
-                                                    </div>
-                                                </div>
+                                   
                                             </li>
                                             <li class="global-nav__item">
                                                 <div class="global-nav__link global-nav__link--active">Бренды</div>
