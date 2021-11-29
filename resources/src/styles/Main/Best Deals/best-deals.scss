@@ -45,6 +45,7 @@
   &__item {
     padding-right: 24px;
   }
+
   &__link {
     display: block;
     font-weight: bold;
@@ -53,25 +54,26 @@
     padding: 8px 0 4px 0;
     color: var(--color-grey-text);
     border-bottom: 1px dashed #7b94b0;
-  }
 
-  &__link:hover {
-    color: var(--color-dark-blue-text);
-  }
-  &__link:active {
-    border-radius: 15px;
-    color: var(--color-orange);
-    border-bottom: none;
-    background: rgb(231, 126, 66, 0.1);
-    padding: 8px 12px 8px 11px;
-  }
+    &:hover {
+      color: var(--color-dark-blue-text);
+    }
 
-  &__link.active {
-    border-radius: 15px;
-    color: var(--color-orange);
-    border-bottom: none;
-    background: rgb(231, 126, 66, 0.1);
-    padding: 8px 12px 8px 11px;
+    &:active {
+      border-radius: 15px;
+      color: var(--color-orange);
+      border-bottom: none;
+      background: rgb(231, 126, 66, 0.1);
+      padding: 8px 12px 8px 11px;
+    }
+
+    &.active {
+      border-radius: 15px;
+      color: var(--color-orange);
+      border-bottom: none;
+      background: rgb(231, 126, 66, 0.1);
+      padding: 8px 12px 8px 11px;
+    }
   }
 }
 
@@ -97,19 +99,19 @@
     &__list {
       flex-direction: column;
     }
-      &__link {
-        border-bottom: none;
-        margin-bottom: 3px;
-      }
-  
-      &__link.active {
+    &__link {
+      border-bottom: none;
+      margin-bottom: 3px;
+
+      &.active {
         border-radius: 0;
         padding: 3px;
       }
-      &__link:active {
+
+      &:active {
         border-radius: 0;
         padding: 4px;
       }
     }
-  
+  }
 }

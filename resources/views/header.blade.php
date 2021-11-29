@@ -1000,19 +1000,19 @@
                                         </button>
                                     </div>
                                     <div class="form__modal-background">
-                                        <div class="modal-background"></div>
+                                        <div class="modal-background modal-background--opacity"></div>
                                     </div>
                                     <div class="form__popup">
-                                        <form class="form-search">
-                                            <div class="form-search__field">
-                                                <input class="form-search__input" name="search" placeholder="Поиск ..." type="text" required />
+                                        <form class="form__search">
+                                            <div class="form__field">
+                                                <input class="form__input" name="search" placeholder="Поиск ..." type="text" required />
                                             
-                                                <div class="form-search__button-close">
+                                                <div class="form__button-close">
                                                     <button class="button-close js-search"></button>
                                                 </div>
                                             </div>
                                         </form>
-                                        <span class="form-text">Начните вводить категорию или название товара (артикул), бренда или клиники</span>
+                                        <span class="form__text">Начните вводить категорию или название товара (артикул), бренда или клиники</span>
                                     </div>
                                 </div>
                             </div>

@@ -3,28 +3,31 @@
 
 .slick-dots {
   bottom: -28px;
-}
 
-.slick-dots li {
-  margin: 0 1px;
-}
+  li {
+    margin: 0 1px;
 
-.slick-dots li button {
-  padding: 1px;
-}
+    button {
+      padding: 1px;
 
-.slick-dots li button:before {
-  font-size: 33px;
-  opacity: 1;
-  color: var(--color-grey-border);
-}
+      &::before {
+        font-size: 33px;
+        opacity: 1;
+        color: var(--color-grey-border);
+      }
 
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before {
-  color: var(--color-grey-text);
-}
-.slick-dots li.slick-active button:before {
-  color: var(--color-green);
+      &:hover,
+      &:focus {
+        &::before {
+          color: var(--color-grey-text);
+        }
+      }
+    }
+
+    &.slick-active button::before {
+      color: var(--color-green);
+    }
+  }
 }
 
 .slick-slide {

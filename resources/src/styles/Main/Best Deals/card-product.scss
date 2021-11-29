@@ -15,7 +15,6 @@
 .card {
   display: flex;
   flex-direction: column;
-
   position: relative;
   width: 100%;
 
@@ -27,11 +26,20 @@
     padding: 30px;
     display: flex;
     justify-content: center;
+
+    img {
+      width: 100%;
+      max-width: 200px;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+    }
   }
 
-  &__image img {
-    width: 100%;
-    max-width: 200px;
+  &__image:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
 
   &__text {
@@ -40,10 +48,10 @@
     color: var(--color-dark-blue-text);
     min-height: 48px;
     margin-bottom: 27px;
-  }
 
-  &__text:hover {
-    color: var(--color-grey-text);
+    &:hover {
+      color: var(--color-grey-text);
+    }
   }
 
   &__box {
@@ -53,6 +61,7 @@
     margin-top: 14px;
   }
 }
+
 .card-price {
   &__top {
     display: flex;
@@ -117,6 +126,7 @@
     &__image {
       border: none;
     }
+
     &__text {
       margin-bottom: 8px;
       min-height: 65px;

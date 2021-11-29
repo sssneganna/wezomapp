@@ -37,6 +37,11 @@
     line-height: 16px;
     color: var(--color-white-text);
     opacity: 0.6;
+
+    &:hover {
+      transition: all 0.3s;
+      opacity: 1;
+    }
   }
 
   &__link--mmenu {
@@ -50,19 +55,14 @@
     transform: translateX(0px);
     -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: all 700ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
 
-  &__link--mmenu:hover {
-    font-size: 20px;
-    background: rgba(1, 1, 1, 0.3);
-    color: var(--color-white-text);
-    -webkit-transform: translateX(20px);
-    transform: translateX(20px);
-  }
-
-  &__link:hover {
-    transition: all 0.3s;
-    opacity: 1;
+    &:hover {
+      font-size: 20px;
+      background: rgba(1, 1, 1, 0.3);
+      color: var(--color-white-text);
+      -webkit-transform: translateX(20px);
+      transform: translateX(20px);
+    }
   }
 }
 
@@ -71,6 +71,7 @@
     &--mobile {
       display: flex;
     }
+
     &__item--mobile {
       margin-bottom: 0;
       margin-right: 15px;
@@ -79,6 +80,7 @@
     &__item--mobile:last-child {
       margin-right: 0;
     }
+
     &__link--mobile {
       font-size: 11px;
       line-height: 9px;

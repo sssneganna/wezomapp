@@ -2,16 +2,26 @@
   width: 50%;
   display: flex;
   align-items: flex-end;
-  padding-top: 12px;
+  padding-top: 9px;
   flex-direction: column;
 
   &__item {
     display: flex;
     width: 100%;
     padding: 20px 22px 10px 23px;
-    margin-bottom: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
     align-items: center;
     justify-content: space-between;
+
+    &:hover {
+      background-color: var(--color-white);
+      transition: background-color 0.3s;
+    }
+
+    &:hover .sub-menu-container {
+      transform: scaleX(1);
+    }
   }
 
   &__item:hover &__icon {
@@ -23,11 +33,6 @@
     border-bottom: 2px solid var(--color-logo);
     border-right: 2px solid var(--color-logo);
     transition: all 0.3s;
-  }
-
-  &__item:hover {
-    background-color: var(--color-white);
-    transition: background-color 0.3s;
   }
 
   &__item:hover &__link {
@@ -63,36 +68,36 @@
   &__icon {
     margin-right: 17px;
     color: var(--color-dark-blue-text);
-  }
 
-  &__icon--size-dog {
-    width: 25px;
-    height: 27px;
-  }
+    &--size-dog {
+      width: 25px;
+      height: 27px;
+    }
 
-  &__icon--size-cat {
-    width: 25px;
-    height: 25px;
-  }
+    &--size-cat {
+      width: 25px;
+      height: 25px;
+    }
 
-  &__icon--size-birds {
-    width: 32px;
-    height: 32px;
-  }
+    &--size-birds {
+      width: 32px;
+      height: 32px;
+    }
 
-  &__icon--size-star {
-    width: 24px;
-    height: 22px;
-  }
+    &--size-star {
+      width: 24px;
+      height: 22px;
+    }
 
-  &__icon--size-procent {
-    width: 20px;
-    height: 22px;
-  }
+    &--size-procent {
+      width: 20px;
+      height: 22px;
+    }
 
-  &__icon--size-rodents {
-    width: 21px;
-    height: 27px;
+    &--size-rodents {
+      width: 21px;
+      height: 27px;
+    }
   }
 
   &__link {
@@ -102,8 +107,5 @@
     line-height: 19px;
     text-transform: uppercase;
     color: var(--color-dark-blue-text);
-  }
-  &__item:hover .sub-menu-container {
-    display: flex;
   }
 }

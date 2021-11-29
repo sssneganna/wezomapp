@@ -44,6 +44,7 @@
 
   &__logo {
     margin-right: 96px;
+    margin-top: 5px;
   }
 }
 
@@ -106,8 +107,10 @@ body.nav_is_visible .hamRotate180 {
     }
   }
 
-  .bottom-header-right__button {
-    margin-left: 0;
+  .bottom-header-right {
+    &__buttons {
+      margin-left: 0;
+    }
   }
 }
 

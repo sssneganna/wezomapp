@@ -44,16 +44,16 @@
     font-size: 14px;
     line-height: 16px;
     color: var(--color-grey-text);
-  }
 
-  &__link:hover,
-  &__link:focus,
-  &__link:active {
-    color: var(--color-dark-blue-text);
-  }
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--color-dark-blue-text);
+    }
 
-  &__link.active {
-    color: var(--color-dark-blue-text);
+    &.active {
+      color: var(--color-dark-blue-text);
+    }
   }
 }
 

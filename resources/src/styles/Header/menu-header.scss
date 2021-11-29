@@ -17,15 +17,15 @@
     font-size: 14px;
     line-height: 16px;
     color: var(--color-grey-text);
-  }
 
-  &__link:hover {
-    color: var(--color-dark-blue-text);
-    transition: color 0.3s;
-  }
+    &:hover {
+      color: var(--color-dark-blue-text);
+      transition: color 0.3s;
+    }
 
-  &__link.active {
-    color: var(--color-dark-blue-text);
-    transition: all 0.3s;
+    &.active {
+      color: var(--color-dark-blue-text);
+      transition: all 0.3s;
+    }
   }
 }

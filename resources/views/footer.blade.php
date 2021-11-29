@@ -4,20 +4,14 @@
                 <div class="footer__left">
                     <div class="footer-left">
                         <div class="footer-left__logo">
-                           
-                               
                                     <a class="logo" target="blank" href="https://wezom.com.ua">
                                         <svg class="logo__icon" width="114" height="41">
-
                                             <use xlink:href="./dist/spritemap.svg#sprite-wezom-logo">
                                             </use>
-
                                         </svg>
                                     </a>
 </div>
                                 <div class="footer-left__copyright">© 2020 Интернет-магазин</div>
-                           
-                        
                         <nav class="footer-left__nav">
                             <ul class="navigation navigation--mobile">
                                 <li class="navigation__item navigation__item--mobile">
@@ -45,10 +39,8 @@
                                     <a class="button button--size-medium button--filled-white" target="blank"
                                         href="https://www.facebook.com/">
                                         <svg width="12" height="24">
-
                                             <use xlink:href="./dist/spritemap.svg#sprite-icon-fb">
                                             </use>
-
                                         </svg>
                                     </a>
                                 </li>
@@ -225,13 +217,11 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="sub-footer__right">
-                            
+                        <div class="sub-footer__right">                           
                                 <span class="sub-footer__text">Разработано в</span>
                                 <a href="https://wezom.com.ua/" target="blank" class="sub-footer__link">
                                     Wezom
-                                </a>
-                            
+                                </a>                           
                         </div>
                     </div>
                     </div>

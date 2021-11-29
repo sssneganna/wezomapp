@@ -22,10 +22,10 @@
   justify-content: center;
   stroke: var(--color-dark-blue-text);
   stroke-width: 2;
-}
 
-.header-button:hover {
-  stroke: var(--color-grey-text);
+  &:hover {
+    stroke: var(--color-grey-text);
+  }
 }
 
 .basket {
@@ -42,7 +42,7 @@
     height: var(--size-number);
     position: absolute;
     top: -10%;
-    right: -10%;
+    right: -40%;
     font-weight: bold;
     font-size: 12px;
     line-height: 14px;

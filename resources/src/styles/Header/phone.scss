@@ -3,14 +3,29 @@
   position: relative;
   display: flex;
 
+  &.active .phone__popup {
+    display: flex;
+  }
+
+  &:hover .phone__popup {
+    display: flex;
+  }
+
+  &__show-popup {
+    display: flex;
+    position: relative;
+  }
+
   &__text {
     font-size: 14px;
     line-height: 16px;
     color: var(--color-grey-text);
   }
+
   &__item {
     margin-bottom: 5px;
   }
+
   &__link {
     font-size: 14px;
     line-height: 16px;
@@ -19,11 +34,11 @@
     margin-left: 9px;
     margin-right: 5px;
     padding-bottom: 5px;
-  }
 
-  &__link:hover {
-    color: var(--color-dark-blue-text);
-    transition: color 0.3s;
+    &:hover {
+      color: var(--color-dark-blue-text);
+      transition: color 0.3s;
+    }
   }
 
   &__popup {
@@ -46,6 +61,7 @@
 
 .phone-mobile {
   margin-bottom: -5px;
+
   &__item {
     margin-bottom: 5px;
   }
@@ -55,23 +71,10 @@
     font-size: 24px;
     color: var(--color-white-text);
     font-weight: bold;
+
+    &:hover {
+      background: rgba(1, 1, 1, 0.3);
+      transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
   }
-
-  &__link:hover {
-    background: rgba(1, 1, 1, 0.3);
-    transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-}
-
-.phone.active .phone__popup {
-  display: flex;
-}
-
-.phone:hover .phone__popup {
-  display: flex;
-}
-
-.phone__show-popup {
-  display: flex;
-  position: relative;
 }

@@ -2,11 +2,11 @@
 @at-root .logo {
   &__icon {
     color: var(--color-logo);
-  }
 
-  &__icon:hover {
-    color: var(--color-green);
-    transition: color 0.3s;
+    &:hover {
+      color: var(--color-green);
+      transition: color 0.3s;
+    }
   }
 }
 

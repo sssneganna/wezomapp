@@ -56,16 +56,17 @@
     background: transparent;
     padding: 0 0 3px 0;
     border-bottom: 1px dashed var(--color-orange);
-  }
 
-  &__button:hover,
-  &__button:focus,
-  &__button:active {
-    color: var(--color-green);
-    transition: all 0.3s;
-    border-bottom: 1px dashed var(--color-green);
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--color-green);
+      transition: all 0.3s;
+      border-bottom: 1px dashed var(--color-green);
+    }
   }
 }
+
 @at-root .seo {
   h2 {
     font-weight: bold;
