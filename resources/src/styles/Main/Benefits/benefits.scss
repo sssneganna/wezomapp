@@ -33,6 +33,7 @@
     line-height: 140%;
     color: var(--color-dark-blue-text);
   }
+
   &__icon-1 {
     width: 45px;
     height: 32px;
@@ -94,6 +95,7 @@
     }
   }
 }
+
 @media screen and (max-width: 550px) {
   .benefits {
     margin-bottom: 50px;

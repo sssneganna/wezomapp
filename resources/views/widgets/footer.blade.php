@@ -1,22 +1,34 @@
+@php 
+$companyList = [
+    [
+        'title' => 'Компания',
+        'texts' => [
+            ['text' => 'О компании'],
+            ['text' => 'Адреса магазинов «ZooBonus»'],
+            ['text' => 'Вакансии'],
+            ['text' => 'Благотворительность'],
+            ['text' => 'Контакты'],
+            ],
+    ]
+    ];
+@endphp
 <footer class="footer">
     <div class="container container--biggest">
         <div class="footer__container">
-                <div class="footer__left">
-                    <div class="footer-left">
-                        <div class="footer-left__logo">
-                                    <a class="logo" target="blank" href="https://wezom.com.ua">
-                                        <svg class="logo__icon" width="114" height="41">
-                                            <use xlink:href="./dist/spritemap.svg#sprite-wezom-logo">
-                                            </use>
-                                        </svg>
-                                    </a>
-</div>
-                                <div class="footer-left__copyright">© 2020 Интернет-магазин</div>
-                        <nav class="footer-left__nav">
-                            <ul class="navigation navigation--mobile">
-                                <li class="navigation__item navigation__item--mobile">
-                                    <a href="#" class="navigation__link navigation__link--mobile">Условия использования
-                                        сайта</a>
+            <div class="footer__left">
+                <div class="footer-left">
+                    <div class="footer-left__logo">
+                        <a class="logo" target="blank" href="https://wezom.com.ua">
+                            <svg class="logo__icon" width="114" height="41">
+                                <use xlink:href="./dist/spritemap.svg#sprite-wezom-logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer-left__copyright">© 2020 Интернет-магазин</div>
+                    <nav class="footer-left__nav">
+                        <ul class="navigation navigation--mobile">
+                            <li class="navigation__item navigation__item--mobile">
+                                <a href="#" class="navigation__link navigation__link--mobile">Условия использования сайта</a>
                                 </li>
                                 <li class="navigation__item navigation__item--mobile">
                                     <a href="#" class="navigation__link navigation__link--mobile">Защита персональных

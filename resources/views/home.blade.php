@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-       @include("head")   
+       @include("widgets.head")   
     </head>
     <body>
     <div class="layout">
     <div class="layout__header">
-    @include("header")
+    @include("widgets.header")
     </div>  
     <main class="layout__main">
-    @include("best-deals")
-    @include("blog")    
-    @include("benefits")
-    @include("seo")
-    @include("discounts")
+    @include("widgets.best-deals")
+    @include("widgets.blog")    
+    @include("widgets.benefits")
+    @include("widgets.seo")
+    @include("widgets.discounts")
     </main>
     <div class="layout__footer">
-    @include("footer")   
+    @include("widgets.footer")   
     </div>
     </div>
-    @include("mobile-menu")
-    @include("scripts")  
+    @include("widgets.mobile-menu")
+    @include("widgets.scripts")  
     </body>
 </html>
