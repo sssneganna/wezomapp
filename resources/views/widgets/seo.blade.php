@@ -1,7 +1,7 @@
 <section class="seo-section">
     <div class="container container--medium">
-        <div class="seo-box js-show-content">
-            <div class="seo-box__content">
+        <div class="seo-section__box js-show-content">
+            <div class="seo-section__content">
                 <div class="seo">
                     <h2>Зоомагазин для домашних питомцев</h2>
                     <p>Любящие владельцы собак и кошек всегда хотят порадовать 
@@ -34,8 +34,8 @@
                          о его здоровье. Зоомагазин — это любимое место для всех любителей животных.</p>
                 </div>
             </div>
-            <button class="seo-box__button seo-box__button--show">Показать все</button>
-            <button class="seo-box__button seo-box__button--hide">Свернуть</button>
+            <button class="seo-section__button seo-section__button--show">Показать все</button>
+            <button class="seo-section__button seo-section__button--hide">Свернуть</button>
         </div>
     </div>
 </section>

@@ -1,0 +1,15 @@
+.bottom-header-left {
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    margin-right: 96px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+    .bottom-header-left {
+      flex-direction: row-reverse;
+    }
+}

@@ -2,15 +2,12 @@
 @at-root .menu {
   display: flex;
   align-items: center;
+  margin-right: -19px;
 
   &__item {
     display: flex;
     align-items: flex-start;
     margin-right: 19px;
-  }
-
-  &__item:last-child {
-    margin-right: 0;
   }
 
   &__link {

@@ -1,0 +1,19 @@
+.phone-mobile {
+  margin-bottom: -5px;
+
+  &__item {
+    margin-bottom: 5px;
+  }
+
+  &__link {
+    padding: 3px;
+    font-size: 24px;
+    color: var(--color-white-text);
+    font-weight: bold;
+
+    &:hover {
+      background: rgba(1, 1, 1, 0.3);
+      transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+  }
+}

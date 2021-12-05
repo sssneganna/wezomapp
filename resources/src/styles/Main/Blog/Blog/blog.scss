@@ -1,7 +1,7 @@
 /*Blog*/
 @at-root .blog {
   &__title {
-    margin-bottom: 22px;
+    margin-bottom: 18px;
     font-weight: bold;
     font-size: 44px;
     line-height: 52px;
@@ -13,7 +13,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: -15px;
+    margin-bottom: -30px;
   }
 
   &__nav {
@@ -29,13 +29,11 @@
 
   &__list {
     display: flex;
-  }
-  &__item {
-    margin-right: 20px;
+    margin-right: -20px;
   }
 
-  &__item:last-child {
-    margin-right: 0;
+  &__item {
+    margin-right: 20px;
   }
 
   &__link {

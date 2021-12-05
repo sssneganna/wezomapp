@@ -214,10 +214,10 @@ $navigation = [
                                                                         @endforeach
                                                                     </ul>
                                                                     @if(isset($subitem['url']))
-                                                                    <button class="sub-menu__button">
+                                                                    <a href="#" class="sub-menu__button">
                                                                         <span>Смотреть все</span>
                                                                         <span class="arrow arrow--small arrow--next-green"></span>
-                                                                    </button>
+                                                                    </a>
                                                                     @endif
                                                                     </li>
                                                                     @endforeach
@@ -245,8 +245,8 @@ $navigation = [
                             </div>
                             <div class="bottom-header-right">
                                 <div class="bottom-header-right__search">
-                                    <div class="form">
-                                        <div class="form__button">
+                                    <div class="search">
+                                        <div class="search__button">
                                             <button class="search-button js-search">
                                                 <svg class="search-button__icon" width="32" height="32">
                                                     <use xlink:href="./dist/spritemap.svg#sprite-search-icon"></use>
@@ -254,19 +254,20 @@ $navigation = [
                                                 <span class="search-button__text">Поиск</span>
                                             </button>
                                         </div>
-                                        <div class="form__modal-background">
+                                        <div class="search__modal-background">
                                             <div class="modal-background modal-background--opacity"></div>
                                         </div>
-                                        <div class="form__popup">
-                                            <form class="form__search">
-                                                <div class="form__field">
-                                                    <input class="form__input" name="search" placeholder="Поиск ..." type="text" required />
-                                                    <div class="form__button-close">
+                                        <div class="search__popup">
+                                            <form class="search__form">
+                                                <div class="search__field">
+                                                    <input class="search__input" value="" id="search" name="search" placeholder="Поиск ..." type="text" required />
+                                                    <div class="search__button-close">
                                                         <button class="button-close js-search"></button>
                                                     </div>
                                                 </div>
                                             </form>
-                                            <span class="form__text">Начните вводить категорию или название товара (артикул), бренда или клиники</span>
+                                            <div class="search__box-results">@include("widgets.search-results")</div>
+                                            <span class="search__text">Начните вводить категорию или название товара (артикул), бренда или клиники</span>
                                         </div>
                                     </div>
                                 </div>

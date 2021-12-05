@@ -1,4 +1,5 @@
 .global-nav {
+  $root: &;
   display: flex;
   align-items: center;
 
@@ -17,18 +18,18 @@
       margin-bottom: -23px;
     }
 
-    &:hover .global-nav__dropdown-content {
+    &:hover #{$root}__dropdown-content {
       display: flex;
       opacity: 1;
       transition: opacity 0.3s ease;
     }
 
-    &:hover .global-nav__link {
+    &:hover #{$root}__link {
       color: var(--color-logo);
       transition: color 0.3s;
     }
 
-    &:hover .global-nav__link--mobile {
+    &:hover #{$root}__link--mobile {
       background: rgba(1, 1, 1, 0.3);
       color: var(--color-white-text);
       -webkit-transform: translateX(20px);

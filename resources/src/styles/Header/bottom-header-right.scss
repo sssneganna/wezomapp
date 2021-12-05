@@ -1,0 +1,16 @@
+.bottom-header-right {
+  display: flex;
+  align-items: center;
+
+  &__buttons {
+    margin-left: 39px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .bottom-header-right {
+    &__buttons {
+      margin-left: 0;
+    }
+  }
+}

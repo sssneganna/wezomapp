@@ -59,10 +59,10 @@ $blogMenu = [
     ]
 @endphp
 
-<div class="main-container">
+<div class="blog-section">
     <div class="container">
-        <div class="main-content">
-            <div class="main-content__left">
+        <div class="blog-section__content">
+            <div class="blog-section__left">
                 <aside class="search-blog">
                     <h2 class="search-blog__title">Объявления о продаже</h2>
                     <div class="search-blog__icon">
@@ -116,7 +116,7 @@ $blogMenu = [
                         </div>
                     </aside>
                 </div>
-                <div class="main-content__right">
+                <div class="blog-section__right">
                     <section class="blog">
                         <h2 class="blog__title">Полезные материалы</h2>
                         <div class="blog__menu">

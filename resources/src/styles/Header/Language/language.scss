@@ -5,10 +5,10 @@
   &__item--mobile {
     padding: 5px;
     border-right: 2px solid var(--color-white-text);
-  }
 
-  &__item--mobile:last-of-type {
-    border-right: none;
+    &:last-of-type {
+      border-right: none;
+    }
   }
 
   &__link {

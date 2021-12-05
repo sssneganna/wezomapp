@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('home');
 });
+
+Route::post('/search', function () {
+    return view('widgets.search-results');
+});

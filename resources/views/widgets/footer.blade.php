@@ -1,17 +1,63 @@
 @php 
 $companyList = [
-    [
-        'title' => 'Компания',
-        'texts' => [
-            ['text' => 'О компании'],
-            ['text' => 'Адреса магазинов «ZooBonus»'],
-            ['text' => 'Вакансии'],
-            ['text' => 'Благотворительность'],
-            ['text' => 'Контакты'],
+        [
+            'text' => 'О компании', 
+            'url' => '#']
+            ,
+        [
+            'text' => 'Адреса магазинов «ZooBonus»', 
+            'url' => '#'
             ],
-    ]
+        [
+            'text' => 'Вакансии', 
+            'url' => '#'
+            ],
+        [
+            'text' => 'Благотворительность', 
+            'url' => '#'
+            ],
+        [
+            'text' => 'Контакты', 
+            'url' => '#'
+            ],
     ];
+
+$customerList = [
+    [
+        'text' => 'Доставка и оплата', 
+        'url' => '#'
+        ],
+    [
+        'text' => 'FAQ', 
+        'url' => '#'
+        ],
+    [
+        'text' => 'Подарочные сертификаты', 
+        'url' => '#'
+        ],
+    [
+        'text' => 'Акции', 
+        'url' => '#'
+        ],
+    [
+        'text' => 'Породы животных', 
+        'url' => '#'
+        ],
+    [
+        'text' => 'Дисконтная программа', 
+        'url' => '#'
+        ],
+    [
+        'text' => 'Блог', 
+        'url' => '#'
+        ],
+    [
+        'text' => 'Фотогалерея', 
+        'url' => '#'
+        ],
+];
 @endphp
+
 <footer class="footer">
     <div class="container container--biggest">
         <div class="footer__container">
@@ -117,21 +163,11 @@ $companyList = [
                                 <div class="navigation">
                                     <h2 class="navigation__title">Компания </h2>
                                     <ul class="navigation__list">
+                                    @foreach($companyList as $item) 
                                         <li class="navigation__item">
-                                            <a href="#" class="navigation__link">О компании </a>
+                                            <a href="{{$item['url']}}" class="navigation__link">{{$item['text']}} </a>
                                         </li>
-                                        <li class="navigation__item">
-                                            <a href="#" class="navigation__link">Адреса магазинов «ZooBonus»</a>
-                                        </li>
-                                        <li class="navigation__item">
-                                            <a href="#" class="navigation__link">Вакансии</a>
-                                        </li>
-                                        <li class="navigation__item">
-                                            <a href="#" class="navigation__link">Благотворительность</a>
-                                        </li>
-                                        <li class="navigation__item">
-                                            <a href="#" class="navigation__link">Контакты </a>
-                                        </li>
+                                    @endforeach
                                     </ul>
                                 </div>
                             </div>
@@ -139,30 +175,11 @@ $companyList = [
                                 <div class="navigation">
                                     <h2 class="navigation__title">Покупателям </h2>
                                     <ul class="navigation__list">
+                                    @foreach($customerList as $item) 
                                         <li class="navigation__item">
-                                            <a href="#" class="navigation__link">Доставка и оплата</a>
+                                            <a href="{{$item['url']}}" class="navigation__link">{{$item['text']}}</a>
                                         </li>
-                                        <li class="navigation__item">
-                                            <a href="#" class="navigation__link">FAQ</a>
-                                        </li>
-                                        <li class="navigation__item">
-                                            <a href="#" class="navigation__link">Подарочные сертификаты</a>
-                                        </li>
-                                        <li class="navigation__item">
-                                            <a href="#" class="navigation__link">Акции</a>
-                                        </li>
-                                        <li class="navigation__item">
-                                            <a href="#" class="navigation__link">Породы животных</a>
-                                        </li>
-                                        <li class="navigation__item">
-                                            <a href="#" class="navigation__link">Дисконтная программа</a>
-                                        </li>
-                                        <li class="navigation__item">
-                                            <a href="#" class="navigation__link">Блог</a>
-                                        </li>
-                                        <li class="navigation__item">
-                                            <a href="#" class="navigation__link">Фотогалерея</a>
-                                        </li>
+                                    @endforeach
                                     </ul>
                                 </div>
                             </div>

@@ -1,0 +1,17 @@
+/*Header button*/
+.header-buttons {
+  display: flex;
+  align-items: center;
+
+  &__item:nth-of-type(1) {
+    margin-right: 21px;
+  }
+
+  &__item:nth-of-type(2) {
+    margin-right: 9px;
+  }
+
+  &__item:nth-of-type(3) {
+    margin-right: 13px;
+  }
+}

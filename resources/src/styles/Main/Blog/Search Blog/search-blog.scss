@@ -42,11 +42,11 @@
   }
 
   &__list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-right: -10px;
-  margin-bottom: -10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-bottom: -10px;
   }
 
   &__item {
@@ -55,16 +55,18 @@
     overflow: hidden;
   }
 
-  &__link img {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-  }
+  &__link {
+    img {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+    }
 
-  &__link:hover img {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    &:hover img {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
   }
 }
 
@@ -72,6 +74,7 @@
   .search-blog {
     width: 100%;
     padding: 30px 60px;
+
     &__image {
       max-width: 380px;
     }
@@ -89,7 +92,7 @@
 @media screen and (max-width: 414px) {
   .search-blog {
     padding: 30px;
-    
+
     &__image {
       width: 100%;
     }

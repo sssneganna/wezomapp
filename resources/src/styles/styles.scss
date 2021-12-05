@@ -1,47 +1,60 @@
 /*Common*/
 
 @import "./common/base.scss";
-@import "./common/buttons.scss";
+@import "./common/button.scss";
 @import "./common/link.scss";
 @import "./common/arrow.scss";
 @import "./common/dots.scss";
 @import "./common/rating.scss";
-@import "./common/stickers.scss";
+@import "./common/Stickers/stickers.scss";
+@import "./common/Stickers/sticker.scss";
 @import "./common/variables.scss";
 @import "./common/container.scss";
 @import "./common/layout.scss";
 @import "./common/triangle.scss";
 @import "./common/modal-background.scss";
-@import "./common/navigation-toggle.scss";
+@import "./common/nav-toggle.scss";
 
 /*Header*/
 
 @import "./Header/header.scss";
-@import "./Header/search.scss";
-@import "./Header/city-button.scss";
-@import "./Header/language.scss";
-@import "./Header/phone.scss";
-@import "./Header/logo.scss";
-@import "./Header/menu-header.scss";
+@import "./Header/top-header-left.scss";
+@import "./Header/top-header-right.scss";
+@import "./Header/bottom-header-right.scss";
+@import "./Header/bottom-header-left.scss";
+@import "./Header/Search/form.scss";
+@import "./Header/Search/button-close.scss";
+@import "./Header/Search/search-button.scss";
+@import "./Header/Search/search-results.scss";
+@import "./Header/City/city.scss";
+@import "./Header/Language/language.scss";
+@import "./Header/Phone/phone.scss";
+@import "./Header/Phone/phone-mobile.scss";
+@import "./Header/Logo/logo.scss";
+@import "./Header/Menu/menu.scss";
 @import "./Header/mobile-menu.scss";
-@import "./Header/global-navigation.scss";
-@import "./Header/header-buttons.scss";
-@import "./Header/global-nav.scss";
-@import "./Header/nav.scss";
-@import "./Header/sub-menu.scss";
+@import "./Header/Global navigation/global-navigation.scss";
+@import "./Header/Header Buttons/header-buttons.scss";
+@import "./Header/Header Buttons/header-button.scss";
+@import "./Header/Header Buttons/basket.scss";
+@import "./Header/Global navigation/global-nav.scss";
+@import "./Header/Global navigation/nav.scss";
+@import "./Header/Global navigation/sub-menu.scss";
+@import "./Header/Global navigation/sub-menu-container.scss";
 
 /*Main*/
 
-@import "./Main/Blog/main-container.scss";
+@import "./Main/Blog/blog-section.scss";
 @import "./Main/Benefits/benefits.scss";
 @import "./Main/Discounts/discounts.scss";
-@import "./Main/Blog/search-blog.scss";
+@import "./Main/Blog/Search Blog/search-blog.scss";
+@import "./Main/Seo/seo-section.scss";
 @import "./Main/Seo/seo.scss";
 @import "./Main/Best Deals/best-deals.scss";
-@import "./Main/Best Deals/card.scss";
-@import "./Main/Blog/blog.scss";
-
-@import "./Main/Blog/blog-gallery.scss";
+@import "./Main/Best Deals/Card/card.scss";
+@import "./Main/Best Deals/Card/cards.scss";
+@import "./Main/Blog/Blog/blog.scss";
+@import "./Main/Blog/Blog/blog-gallery.scss";
 
 /*Footer*/
 
@@ -58,4 +71,4 @@
 @import "./Footer/communication.scss";
 @import "./Footer/social-icon.scss";
 @import "./Footer/footer.scss";
-@import "./Footer/up-button.scss";
+@import "./Footer/up-btn.scss";

@@ -19,44 +19,6 @@
   overflow-x: hidden;
 }
 
-.top-header-left {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  &__city {
-    margin-right: 76px;
-  }
-}
-
-.top-header-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  &__phone {
-    margin-right: 45px;
-  }
-}
-
-.bottom-header-left {
-  display: flex;
-  align-items: center;
-
-  &__logo {
-    margin-right: 96px;
-    margin-top: 5px;
-  }
-}
-
-.bottom-header-right {
-  display: flex;
-  align-items: center;
-
-  &__buttons {
-    margin-left: 39px;
-  }
-}
-
 body.nav_is_visible {
   transform: translateX(60%);
   transition: transform 0.3s ease-in-out;
@@ -72,6 +34,7 @@ body.nav_is_visible .nav-toggle {
   left: -60px;
   z-index: 3000;
 }
+
 body.nav_is_visible .ham1 .top {
   stroke-dashoffset: -98px;
 }
@@ -97,19 +60,9 @@ body.nav_is_visible .hamRotate180 {
 }
 
 @media screen and (max-width: 1300px) {
-  .bottom-header-left {
-    flex-direction: row-reverse;
-  }
-
   .header {
     &__top {
       display: none;
-    }
-  }
-
-  .bottom-header-right {
-    &__buttons {
-      margin-left: 0;
     }
   }
 }

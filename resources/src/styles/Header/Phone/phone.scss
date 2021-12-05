@@ -1,13 +1,14 @@
 @at-root /*Phone*/
 .phone {
+  $root: &;
   position: relative;
   display: flex;
 
-  &.active .phone__popup {
+  &.active #{$root}_popup {
     display: flex;
   }
 
-  &:hover .phone__popup {
+  &:hover #{$root}__popup {
     display: flex;
   }
 
@@ -56,25 +57,5 @@
     flex-direction: column;
     border-radius: 0 0 8px 8px;
     box-shadow: 0px 4px 12px rgba(18, 33, 63, 0.05);
-  }
-}
-
-.phone-mobile {
-  margin-bottom: -5px;
-
-  &__item {
-    margin-bottom: 5px;
-  }
-
-  &__link {
-    padding: 3px;
-    font-size: 24px;
-    color: var(--color-white-text);
-    font-weight: bold;
-
-    &:hover {
-      background: rgba(1, 1, 1, 0.3);
-      transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
   }
 }

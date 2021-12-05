@@ -1,0 +1,23 @@
+.basket {
+    border: none;
+    background: transparent;
+    position: relative;
+  
+    &__number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      --size-number: 20px;
+      width: var(--size-number);
+      height: var(--size-number);
+      position: absolute;
+      top: -10%;
+      right: -40%;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 14px;
+      color: var(--color-white-text);
+      background: var(--color-orange);
+      border-radius: 50px;
+    }
+  }

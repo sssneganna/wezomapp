@@ -1,73 +1,4 @@
-/*Seo*/
-.seo-section {
-  margin-bottom: 164px;
-}
-
-.seo-box {
-  &__content {
-    margin-bottom: 6px;
-    position: relative;
-    height: 230px;
-    overflow: hidden;
-  }
-
-  &.active &__content {
-    height: auto;
-    overflow: auto;
-    margin-bottom: 15px;
-  }
-
-  &.active &__content::after {
-    display: none;
-  }
-  &.active &__button--show {
-    display: none;
-  }
-
-  &__button--hide {
-    display: none;
-  }
-
-  &.active &__button--hide {
-    display: block;
-  }
-
-  &__content::after {
-    display: block;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    height: 36px;
-    content: "";
-    position: absolute;
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0) 0%,
-      #ffffff 100%
-    );
-  }
-
-  &__button {
-    color: var(--color-orange);
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 14px;
-    border: none;
-    background: transparent;
-    padding: 0 0 3px 0;
-    border-bottom: 1px dashed var(--color-orange);
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: var(--color-green);
-      transition: all 0.3s;
-      border-bottom: 1px dashed var(--color-green);
-    }
-  }
-}
-
-@at-root .seo {
+.seo {
   h2 {
     font-weight: bold;
     font-size: 40px;
@@ -95,25 +26,14 @@
   }
 }
 
-@media screen and (max-width: 1125px) {
-  .seo-section {
-    margin-bottom: 80px;
-  }
-}
-
 @media screen and (max-width: 414px) {
   .seo {
     h2 {
       font-size: 35px;
     }
+
     h3 {
       font-size: 22px;
-    }
-  }
-
-  .seo-box {
-    &__content {
-      height: 410px;
     }
   }
 }
