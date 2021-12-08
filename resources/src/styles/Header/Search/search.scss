@@ -71,6 +71,11 @@
   &.active .modal-background {
     display: block;
   }
+
+  &__box-results {
+    max-width: 75%;
+    margin-top: 40px;
+  }
 }
 
 @media screen and (max-width: 1300px) {

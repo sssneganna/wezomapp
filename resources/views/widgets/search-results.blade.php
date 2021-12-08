@@ -108,13 +108,69 @@ $searchResults = [
     ],
     
 ];
+
+$searchResultsMenu = [
+    [
+        'name' => 'Товары',
+        'number' => '256',
+        'url' => '#',
+        'children' => [
+            ['link' => 'Корм для собак',
+            'number' => '86',
+            'url' => "#"
+            ],
+            ['link' => 'Корм для котов',
+            'number' => '65',
+            'url' => "#"
+            ],
+            ['link' => 'Корм для грызунов',
+            'number' => '18',
+            'url' => "#"
+            ],
+            ['link' => 'Аксессуары для кормления животных',
+            'number' => '3',
+            'url' => "#"
+            ],
+            ['link' => 'Кормушки, поилки для собак ',
+            'number' => '18',
+            'url' => "#"
+            ],
+        ]
+    ],
+    [
+        'name' => 'Статьи',
+        'number' => '24',
+        'url' => '#'
+    ],
+    [
+        'name' => 'Ветклиники',
+        'number' => '5',
+        'url' => '#'
+    ],
+    
+
+];
 @endphp
 <div class="search-container">
     <div class="search-container__left">
 <ul class="search-menu">
+@foreach($searchResultsMenu as $item) 
     <li class="search-menu__item">
-
+        <a href="{{$item['url']}}" class="search-menu__menu-link">
+        <span class="search-menu__link">{{$item['name']}}</span>
+        <span class="search-menu__number">{{$item['number']}}</span>
+</a>
+        @if(isset($item['children']))
+        <ul class="serch-menu__submenu">
+        @foreach($item['children'] as $subitem) 
+            <li class="search-menu__subitem">
+                <a href="{{$subitem['url']}}" class="search-menu__sublink">{{$subitem['link']}}({{$subitem['number']}})</a>
+            </li>
+        @endforeach
+        </ul>
+        @endif
     </li>
+@endforeach
 </ul>
 </div>
 <div class="search-container__right">
