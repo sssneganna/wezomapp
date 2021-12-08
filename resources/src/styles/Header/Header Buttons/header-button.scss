@@ -1,11 +1,13 @@
 .header-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    stroke: var(--color-dark-blue-text);
-    stroke-width: 2;
-  
-    &:hover {
-      stroke: var(--color-grey-text);
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  stroke: var(--color-dark-blue-text);
+  stroke-width: 2;
+  border: none;
+  background: transparent;
+
+  &:hover {
+    stroke: var(--color-grey-text);
   }
+}

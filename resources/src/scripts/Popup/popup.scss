@@ -1,0 +1,16 @@
+@import "~magnific-popup/dist/magnific-popup.css";
+
+.popup {
+  position: relative;
+  background: #fff;
+  padding: 32px 0;
+  width: auto;
+  max-width: 460px;
+  margin: 20px auto;
+}
+
+.mfp-close {
+  font-size: 40px;
+  right: 5px;
+  top: 5px;
+}

@@ -62,16 +62,15 @@ $customerList = [
     <div class="container container--biggest">
         <div class="footer__container">
             <div class="footer__left">
-                <div class="footer-left">
-                    <div class="footer-left__logo">
+                    <div class="footer__logo">
                         <a class="logo" target="blank" href="https://wezom.com.ua">
                             <svg class="logo__icon" width="114" height="41">
                                 <use xlink:href="./dist/spritemap.svg#sprite-wezom-logo"></use>
                             </svg>
                         </a>
                     </div>
-                    <div class="footer-left__copyright">© 2020 Интернет-магазин</div>
-                    <nav class="footer-left__nav">
+                    <div class="footer__copyright">© 2020 Интернет-магазин</div>
+                    <nav class="footer__nav">
                         <ul class="navigation navigation--mobile">
                             <li class="navigation__item navigation__item--mobile">
                                 <a href="#" class="navigation__link navigation__link--mobile">Условия использования сайта</a>
@@ -85,11 +84,10 @@ $customerList = [
                                 </li>
                             </ul>
                         </nav>
-                        </div>
                 </div>
                 <div class="footer__right">
-                    <div class="footer-right">
-                    <div class="footer-right__top">
+                 
+                    <div class="footer__top">
                         <div class="footer-communication">
                         <div class="footer-communication__item footer-communication__item--margin">
                             <ul class="social-icon">
@@ -157,7 +155,7 @@ $customerList = [
                         </div>
                         </div>
                     </div>
-                    <div class="footer-right__main">
+                    <div class="footer__main">
                         <nav class="footer-navigation">
                             <div class="footer-navigation__item">
                                 <div class="navigation">
@@ -213,7 +211,7 @@ $customerList = [
                             </div>
                         </nav>
                     </div>
-                    <div class="footer-right__bottom">
+                    <div class="footer__bottom">
                         <div class="sub-footer">
                         <div class="sub-footer__left">
                             <div class="payment">
@@ -254,7 +252,7 @@ $customerList = [
                         </div>
                     </div>
                     </div>
-</div>
+
                 </div>
                 </div>
                 </div>

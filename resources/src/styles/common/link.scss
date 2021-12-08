@@ -17,6 +17,15 @@
       transition: background 0.3s;
     }
   }
+  &--transparent-green {
+    --link-border-color: var(--color-logo);
+    --link-bg: transparent;
+
+    &:hover {
+      --link-border-color: var(--color-orange);
+      transition: background 0.3s;
+    }
+  }
 
   &--filled {
     --link-border-color: var(--color-orange);
@@ -48,5 +57,10 @@
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
+  }
+
+  &--size-medium-l {
+    min-width: 49%;
+    height: 47px;
   }
 }

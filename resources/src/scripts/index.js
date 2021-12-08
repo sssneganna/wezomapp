@@ -6,6 +6,7 @@ import { openSearchMenu } from "./Search/openSearchMenu.js";
 import { search } from "./Search/search.js";
 import { showContent } from "./showContent.js";
 import { InterObserver } from "./interObserver.js";
+import { openPopup } from "./Popup/popup";
 
 InterObserver();
 openMenu();
@@ -14,3 +15,4 @@ togglePopup();
 openSearchMenu();
 showContent();
 search();
+openPopup()

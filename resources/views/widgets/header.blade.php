@@ -258,15 +258,16 @@ $navigation = [
                                             <div class="modal-background modal-background--opacity"></div>
                                         </div>
                                         <div class="search__popup">
-                                            <form class="search__form">
+                                            <div class="search__form">
                                                 <div class="search__field">
-                                                    <input class="search__input" value="" id="search" name="search" placeholder="Поиск ..." type="text" required />
+                                                    <input autocomplete="off" class="search__input" value="" id="search" name="search" placeholder="Поиск ..." type="text" required />
                                                     <div class="search__button-close">
                                                         <button class="button-close js-search"></button>
                                                     </div>
                                                 </div>
-                                            </form>
-                                            <div class="search__box-results">@include("widgets.search-results")</div>
+                                                
+                                            </div>
+                                            <div class="search__box-results js-search-results"></div>
                                             <span class="search__text">Начните вводить категорию или название товара (артикул), бренда или клиники</span>
                                         </div>
                                     </div>
@@ -274,11 +275,61 @@ $navigation = [
                                 <div class="bottom-header-right__buttons">
                                     <ul class="header-buttons">
                                         <li class="header-buttons__item">
-                                            <a href="#" class="header-button">
+                                            <a href="#popup-inline" class="header-button" data-popup data-type="inline">
                                                 <svg width="22" height="26">
                                                     <use xlink:href="./dist/spritemap.svg#sprite-login"></use>
                                                 </svg>
                                             </a>
+                                            <div class="popup mfp-hide" id="popup-inline">
+                                                <div class="login">
+                                                <div class="login__title">Вход/Регистрация</div>
+                                                <div class="login__body">
+                                                <form class="login__form js-show-content" method="post" action="/">
+                                                    <input class="login__input" placeholder="Ваш номер телефона" type="tel" name="phone"  required />
+                                                    <button class="login__btn" type="submit">Далее</button>
+                                                    <div class="login__box">
+                                                        <select class="login__select">
+                                                      
+    <option value="private person">Частное лицо</option>
+    <option  value="legal entity">Юридическое лицо</option>
+   
+                                                        </select>
+                                                        <span class="login__select-arrow"></span> 
+                                                    </div>
+                                                    <div class="login__stripes">или с помощью</div>
+                                                    <div class="login__buttons">
+                                                        
+                                                            <a href="#" class="link link--transparent-green link--size-medium-l">
+                                                            <svg width="20" height="21">
+                                                    <use xlink:href="./dist/spritemap.svg#sprite-google-login"></use>
+                                                </svg>
+                                                            </a>
+                                                   
+                                                    
+                                                    <a href="#" class="link link--transparent-green link--size-medium-l">
+                                                            <svg width="12" height="25">
+                                                    <use xlink:href="./dist/spritemap.svg#sprite-fb-login"></use>
+                                                </svg>
+                                                            </a>
+                                                    
+                                                    </div>
+                                                    <div class="login__checkbox-box">
+                                                    <input class="login__custom-checkbox" type="checkbox" id="privacy" name="privacy"
+         checked>
+  <label  for="privacy"><span class="login__checkbox-text">Даю согласие на обработку своих персональных данных в соответствии с <a href="#" class="login__checkbox-link">данной офертой</a></span></label>
+                                                    </div>
+                                                </form>
+                                                <div class="login__promotional-offers">
+                                                    <div class="login__icon">
+                                                    <svg width="22" height="26">
+                                                    <use xlink:href="./dist/spritemap.svg#sprite-login"></use>
+                                                </svg>
+                                                    </div>
+                                                    <div class="login__text">Акции, скидки и специальные предложения для зарегистрированных пользователей</div>
+                                                </div>
+                                          
+</div>
+                                        </div>
                                         </li>
                                         <li class="header-buttons__item">
                                             <a href="#" class="header-button">

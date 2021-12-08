@@ -109,7 +109,15 @@ $searchResults = [
     
 ];
 @endphp
+<div class="search-container">
+    <div class="search-container__left">
+<ul class="search-menu">
+    <li class="search-menu__item">
 
+    </li>
+</ul>
+</div>
+<div class="search-container__right">
 <ul class="search-results">
     @foreach($searchResults as $item) 
     <li class="search-results__column">
@@ -131,5 +139,7 @@ $searchResults = [
     </li>
     @endforeach
 </ul>
+</div>
+</div>
 
 

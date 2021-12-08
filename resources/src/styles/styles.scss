@@ -25,12 +25,14 @@
 @import "./Header/Search/form.scss";
 @import "./Header/Search/button-close.scss";
 @import "./Header/Search/search-button.scss";
+@import "./Header/Search/search-container.scss";
 @import "./Header/Search/search-results.scss";
 @import "./Header/City/city.scss";
 @import "./Header/Language/language.scss";
 @import "./Header/Phone/phone.scss";
 @import "./Header/Phone/phone-mobile.scss";
 @import "./Header/Logo/logo.scss";
+@import "./Header/Login/login.scss";
 @import "./Header/Menu/menu.scss";
 @import "./Header/mobile-menu.scss";
 @import "./Header/Global navigation/global-navigation.scss";
@@ -61,8 +63,6 @@
 @import "./Footer/chat.scss";
 @import "./Footer/footer-navigation.scss";
 @import "./Footer/footer-content.scss";
-@import "./Footer/footer-left.scss";
-@import "./Footer/footer-right.scss";
 @import "./Footer/footer-communication.scss";
 @import "./Footer/contacts.scss";
 @import "./Footer/sub-footer.scss";
