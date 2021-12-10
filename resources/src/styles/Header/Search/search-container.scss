@@ -1,5 +1,7 @@
 .search-container {
-  display: flex;
+  &__top {
+    display: flex;
+  }
 
   &__left {
     width: 27%;
@@ -8,5 +10,12 @@
 
   &__right {
     width: 73%;
+  }
+
+  &__bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
   }
 }

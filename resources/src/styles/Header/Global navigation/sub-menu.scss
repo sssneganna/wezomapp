@@ -42,26 +42,4 @@
       font-weight: bold;
     }
   }
-
-  &__button {
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 14px;
-    color: var(--color-logo);
-    border: none;
-    background: transparent;
-    display: flex;
-    align-items: center;
-
-    &:hover {
-      color: var(--color-orange);
-      transition: color 0.3s;
-    }
-
-    &:hover .arrow--next-green::before {
-      border-bottom: 2px solid var(--color-orange);
-      border-right: 2px solid var(--color-orange);
-      transition: all 0.3s;
-    }
-  }
 }

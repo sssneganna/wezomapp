@@ -11,20 +11,12 @@
 
   &__main {
     width: 100%;
-    padding-top: 50px;
+
     overflow: hidden;
   }
 
   &__footer {
     width: 100%;
     overflow: hidden;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  .layout {
-    &__main {
-      padding-top: 30px;
-    }
   }
 }

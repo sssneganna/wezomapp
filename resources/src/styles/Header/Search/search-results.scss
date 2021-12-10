@@ -1,5 +1,11 @@
 .search-results {
   display: flex;
+  margin-right: -36px;
+
+  &__column {
+    width: 33.33%;
+    margin-right: 32px;
+  }
 
   &__title {
     font-family: Roboto Condensed;
@@ -8,7 +14,7 @@
     line-height: 19px;
     text-transform: uppercase;
     color: var(--color-dark-blue-text);
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
   &__list {
@@ -17,15 +23,17 @@
 
   &__item {
     display: flex;
-    padding-bottom: 24px;
+    padding-bottom: 21px;
   }
 
   &__text {
-    font-family: Roboto;
     font-size: 13px;
     line-height: 15px;
     color: var(--color-dark-blue-text);
-    margin-bottom: 8px;
+
+    &:hover {
+      color: var(--color-logo);
+    }
   }
 
   &__box {
@@ -34,6 +42,7 @@
 
   &__price {
     display: flex;
+    margin-top: 5px;
   }
 
   &__old-price {
@@ -50,5 +59,24 @@
     font-size: 13px;
     line-height: 140%;
     color: var(--color-dark-blue-text);
+  }
+
+  &__link {
+    margin-top: 16px;
+  }
+
+  &__image {
+    img {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+    }
+    &:hover {
+      img {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+    }
   }
 }

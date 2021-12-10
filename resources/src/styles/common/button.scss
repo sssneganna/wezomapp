@@ -72,6 +72,17 @@
     background: rgb(255, 255, 255, 0.5);
   }
 
+  &--filled-orange {
+    border: none;
+    background: var(--color-orange);
+    color: var(--color-white-text);
+
+    &:hover {
+      background: var(--color-logo);
+      transition: background 0.3s;
+    }
+  }
+
   &--square {
     border-radius: 5px 5px;
     margin-right: 8px;
@@ -99,6 +110,17 @@
 
   &--size-large {
     --btn-size: 80px;
+  }
+  &--size-rectangle {
+    padding: 14px 40px 15px;
+    width: 100%;
+    height: 48px;
+    border-radius: 3px;
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
   }
 }
 

@@ -22,8 +22,13 @@
     --link-bg: transparent;
 
     &:hover {
-      --link-border-color: var(--color-orange);
-      transition: background 0.3s;
+      --link-bg: var(--color-logo);
+      transition: all 0.3s;
+
+      .login__social-icon {
+        color: white;
+        transition: color 0.3s;
+      }
     }
   }
 
@@ -48,6 +53,14 @@
     line-height: 14px;
   }
 
+  &--size-small-l {
+    width: 160px;
+    height: 32px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
   &--size-medium {
     min-width: 202px;
     height: 48px;
@@ -62,5 +75,37 @@
   &--size-medium-l {
     min-width: 49%;
     height: 47px;
+    text-transform: uppercase;
+  }
+
+  &--size-medium-s {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    min-width: 234px;
+    height: 47px;
+    text-transform: uppercase;
+  }
+
+  &--arrow {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--color-logo);
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: var(--color-orange);
+      transition: color 0.3s;
+    }
+
+    &:hover .arrow--next-green::before {
+      border-bottom: 2px solid var(--color-orange);
+      border-right: 2px solid var(--color-orange);
+      transition: all 0.3s;
+    }
   }
 }

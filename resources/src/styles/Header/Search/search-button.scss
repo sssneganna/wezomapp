@@ -1,18 +1,26 @@
 .search-button {
+  $root: &;
   border: none;
   background: transparent;
   display: flex;
   align-items: center;
 
+  &:hover {
+    #{$root}__icon {
+      stroke: var(--color-grey-text);
+      transition: stroke 0.3s;
+    }
+
+    #{$root}__text {
+      color: var(--color-grey-text);
+      transition: color 0.3s;
+    }
+  }
+
   &__icon {
     margin-right: 12px;
     stroke: var(--color-dark-blue-text);
     stroke-width: 2;
-
-    &:hover {
-      stroke: var(--color-grey-text);
-      transition: stroke 0.3s;
-    }
   }
 
   &__text {
@@ -20,11 +28,6 @@
     font-size: 16px;
     line-height: 19px;
     color: var(--color-dark-blue-text);
-
-    &:hover {
-      color: var(--color-grey-text);
-      transition: color 0.3s;
-    }
   }
 }
 

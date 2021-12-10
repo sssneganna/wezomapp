@@ -1,6 +1,6 @@
 import $ from "jquery";
 
-export const search = () => {
+export const createSearchResults = () => {
   $(document).ready(function () {
     let $result = $(".js-search-results");
 

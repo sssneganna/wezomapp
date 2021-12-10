@@ -1,0 +1,93 @@
+.pet-catalog {
+  &__container {
+    position: relative;
+  }
+
+  &__flex-container {
+    display: flex;
+  }
+
+  &__background {
+    min-height: 600px;
+    position: relative;
+
+    img {
+      position: absolute;
+      min-height: 600px;
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__box {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__add-pet {
+    width: 330px;
+    height: auto;
+
+  }
+
+  &__content {
+    margin-left: 50px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: var(--color-dark-blue-text);
+    margin-bottom: 24px;
+
+    span {
+      font-weight: normal;
+    }
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--color-dark-blue-text);
+    margin-bottom: 40px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 14px;
+    margin-right: -8px;
+    margin-bottom: -40px;
+  }
+
+  &__item {
+    margin-right: 8px;
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+    padding: 14px 12px;
+    background: #ffffff;
+    box-shadow: 0px 4px 12px rgba(84, 143, 199, 0.15);
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-grey-text);
+
+    &:hover {
+      background: var(--color-orange);
+      transition: all 0.3s;
+      color: var(--color-white-text);
+    }
+  }
+}

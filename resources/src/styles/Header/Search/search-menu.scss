@@ -1,10 +1,12 @@
 .search-menu {
+  border-bottom: 1px solid var(--color-grey-border);
+
   &__menu-link {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 12px 12px 13px 10px;
-    border-bottom: 1px solid var(--color-grey-border);
+    border-top: 1px solid var(--color-grey-border);
     font-weight: bold;
     font-size: 13px;
     line-height: 15px;
@@ -18,8 +20,13 @@
   }
 
   &__subitem {
-    padding: 12px 10px 13px 20px;
-    border-bottom: 1px solid var(--color-grey-border);
+    padding: 9px 10px 11px 20px;
+    border-top: 1px solid var(--color-grey-border);
+
+    &:hover {
+      background-color: rgba(58, 158, 253, 0.05);
+      transition: background-color 0.3s;
+    }
   }
 
   &__sublink {
