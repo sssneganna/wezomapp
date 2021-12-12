@@ -2,7 +2,8 @@ import $ from "jquery";
 
 export const slickInit = async () => {
   const $element = $(".js-slider");
-  if ($element.length) {
+  const $elementnav = $(".js-slider-nav");
+  if ($element.length || $elementnav.length) {
     await import("./loader.js");
     $element.slick({
       slidesToShow: 5,

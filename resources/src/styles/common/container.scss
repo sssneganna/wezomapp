@@ -19,11 +19,23 @@
     padding: 0;
   }
 
+  &--padding {
+    padding: 0 230px;
+  }
+
   &--medium {
     max-width: 1210px;
   }
 
   &--small {
     max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .container {
+    &--padding {
+      padding: 0 20px;
+    }
   }
 }

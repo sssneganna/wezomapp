@@ -3,17 +3,18 @@
   display: flex;
 
   &__star {
-    --size-stars: 14px;
+    $root: &;
+    --size-star: 14px;
     display: flex;
     position: relative;
-    width: var(--size-stars);
-    height: var(--size-stars);
+    width: var(--size-star);
+    height: var(--size-star);
     background: transparent;
     border: none;
 
     &::before {
-      width: var(--size-stars);
-      height: var(--size-stars);
+      width: var(--size-star);
+      height: var(--size-star);
       position: absolute;
       top: -50%;
       left: 50%;
@@ -24,6 +25,13 @@
 
     &--checked::before {
       color: #e77e42;
+    }
+
+    &--size {
+      --size-star: 24px;
+      &::before {
+        font-size: 30px;
+      }
     }
   }
 

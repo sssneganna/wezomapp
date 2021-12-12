@@ -295,7 +295,7 @@ $navigation = [
                                                     <button class="button button--size-rectangle button--filled-orange" type="submit">Далее</button>
 </div>
                                                     <div class="login__box">
-                                                <
+                                                
                                                         <div class="login__info">С таким номером телефона еще нет пользователей, хотите зарегистрироваться?</div>
                                                         <label for="login-select">Я регистрируюсь как</label>
                                                         <select id="login-select" class="login__select">

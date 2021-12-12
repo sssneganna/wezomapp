@@ -9,12 +9,11 @@
                 @include("widgets.header")
             </div>
             <main class="layout__main">
-            @include("widgets.pet-catalog")
-            @include("widgets.catalog-list")
-                @include("widgets.seo")
-                @include("widgets.discounts")
+            @include("widgets.product")
+            @include("widgets.discounts") 
             </main>
             <div class="layout__footer">
+           
                 @include("widgets.footer")   
             </div>
         </div>

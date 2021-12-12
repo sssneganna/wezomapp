@@ -1,0 +1,131 @@
+.accordion {
+  $root: &;
+  width: 100%;
+
+  &__item {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    margin-bottom: 8px;
+
+    &.active #{$root}__content {
+      display: block;
+    }
+
+    &.active #{$root}__arrow {
+      transform: rotate(-180deg);
+      transition: transform 0.3s;
+    }
+  }
+
+  &__header {
+    padding: 24px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+
+    &:hover {
+      #{$root}__arrow {
+        stroke: var(--color-orange);
+      }
+
+      #{$root}__title {
+        color: var(--color-orange);
+      }
+    }
+  }
+
+  &__arrow {
+    stroke: #bdc9d7;
+  }
+
+  &__title {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-dark-blue-text);
+  }
+
+  &__title:hover,
+  &__title:active {
+    opacity: 0.8;
+  }
+
+  &__content {
+    display: none;
+    padding: 2px 20px 24px 20px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  &__button {
+    margin-top: -10px;
+  }
+
+  &__left {
+    width: 75%;
+    display: flex;
+  }
+
+  &__right {
+    width: 25%;
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-grey-text);
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__info {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-dark-blue-text);
+  }
+
+  &__method {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-dark-blue-text);
+    width: 340px;
+  }
+
+  &__button-link {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-grey-text);
+    display: flex;
+
+    &:hover {
+      color: var(--color-logo);
+      transition: color 0.3s;
+    }
+  }
+
+  &__button-text {
+    margin-right: 4px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--color-dark-blue-text);
+
+    span {
+      font-weight: bold;
+      color: var(--color-orange);
+    }
+  }
+}

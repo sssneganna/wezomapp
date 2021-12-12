@@ -7,7 +7,11 @@ import { createSearchResults } from "./Search/createSearchResults.js";
 import { showContent } from "./showContent.js";
 //import { InterObserver } from "./interObserver.js";
 import { openPopup } from "./Popup/popup";
+import { slickInitNavSlider } from "./slick-carousel/slickInitNavslider.js";
+import { createAccordion } from "./Accordion/index.js";
 
+slickInitNavSlider();
+createAccordion();
 //InterObserver();
 openMenu();
 scrollTop();
