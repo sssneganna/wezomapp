@@ -1,0 +1,30 @@
+.characteristics {
+  &__title {
+    font-size: 32px;
+    line-height: 37px;
+    color: var(--color-dark-blue-text);
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    border-bottom: 1px solid var(--color-grey-border);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+  }
+
+  &__name {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-grey-text);
+    width: 50%;
+  }
+
+  &__value {
+    width: 50%;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-dark-blue-text);
+  }
+}

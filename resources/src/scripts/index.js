@@ -9,9 +9,11 @@ import { showContent } from "./showContent.js";
 import { openPopup } from "./Popup/popup";
 import { slickInitNavSlider } from "./slick-carousel/slickInitNavslider.js";
 import { createAccordion } from "./Accordion/index.js";
+import { createPhoneMask } from "./jquery-mask-plugin/index.js";
 
 slickInitNavSlider();
 createAccordion();
+createPhoneMask();
 //InterObserver();
 openMenu();
 scrollTop();

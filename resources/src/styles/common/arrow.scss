@@ -36,6 +36,12 @@
     transform: translateY(-50%) translateX(-50%) rotate(135deg);
   }
 
+  &--prev-light-grey::before {
+    border-bottom: 2px solid var(--link-bg);
+    border-right: 2px solid var(--link-bg);
+    transform: translateY(-50%) translateX(-50%) rotate(135deg);
+  }
+
   &--next::before {
     transform: translateY(-50%) translateX(-50%) rotate(-45deg);
   }

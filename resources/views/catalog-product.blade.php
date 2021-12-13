@@ -9,7 +9,9 @@
                 @include("widgets.header")
             </div>
             <main class="layout__main">
+            @include("widgets.breadcrumbs")
             @include("widgets.product")
+            @include("widgets.about-product")
             @include("widgets.discounts") 
             </main>
             <div class="layout__footer">

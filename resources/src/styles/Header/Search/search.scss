@@ -1,6 +1,7 @@
 /*Form search*/
 .search {
   &__popup {
+    box-shadow: inset 0px 11px 12px -10px rgba(18, 33, 63, 0.05);
     display: none;
     align-items: center;
     flex-direction: column;
@@ -9,11 +10,12 @@
     min-height: 256px;
     background: var(--color-white);
     position: fixed;
-    top: 112px;
+    top: 107px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 3000;
     overflow-y: hidden;
+    padding-bottom: 72px;
   }
 
   &__form {
@@ -81,7 +83,7 @@
 @media screen and (max-width: 1300px) {
   .search {
     &__popup {
-      top: 73px;
+      top: 63px;
     }
   }
 }

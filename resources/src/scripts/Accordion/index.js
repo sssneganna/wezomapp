@@ -1,5 +1,4 @@
 import $ from "jquery";
-import "./styles.scss";
 
 export const createAccordion = () => {
   $("[data-collapse]").on("click", function (event) {

@@ -107,7 +107,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .pet-catalog {
     &__content {
       margin-left: 0;
@@ -116,6 +116,26 @@
 
     &__background {
       min-height: 680px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pet-catalog {
+    &__title {
+      font-size: 40px;
+
+      span {
+        font-size: 40px;
+      }
+    }
+
+    &__item {
+      margin-bottom: 30px;
+    }
+
+    &__link {
+      padding: 8px;
     }
   }
 }
@@ -129,13 +149,5 @@
         font-size: 35px;
       }
     }
-
-    &__item {
-      margin-bottom: 30px;
-    }
-
-    &__link {
-      padding: 8px;
-    }
   }
-}
+} ;
