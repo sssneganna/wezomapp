@@ -5,6 +5,6 @@ export const createAccordion = () => {
     event.preventDefault();
     let $this = $(this),
       blockId = $this.data("collapse");
-    $this.toggleClass("active");
+    $this.toggleClass("is-active");
   });
 };

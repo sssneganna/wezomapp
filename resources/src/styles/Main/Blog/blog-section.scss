@@ -1,7 +1,4 @@
 .blog-section {
-  margin-bottom: 120px;
-  margin-top: 100px;
-
   &__content {
     display: flex;
   }
@@ -31,12 +28,5 @@
     &__right {
       width: 100%;
     }
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .blog-section {
-    margin-bottom: 70px;
-    margin-top: 60px;
   }
 }

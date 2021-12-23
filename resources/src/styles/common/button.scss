@@ -17,59 +17,89 @@
     box-shadow: 0px 2px 4px rgba(84, 143, 199, 0.15);
   }
 
-  &--transparent-hover:hover,
-  &--transparent:focus,
-  &--transparent:active {
-    border: 1px solid rgb(224, 224, 224, 0.3);
-    background: rgb(224, 224, 224, 0.3);
-    box-shadow: 0px 2px 4px rgba(84, 143, 199, 0.15);
-    transition: all 0.3s;
+  &--transparent-shadow {
+    background: transparent;
+    border: none;
+    box-shadow: 0px 4px 12px rgba(84, 143, 199, 0.15);
+  }
+
+  &--transparent-hover {
+    &:hover {
+      border: 1px solid rgb(224, 224, 224, 0.3);
+      background: rgb(224, 224, 224, 0.3);
+      transition: all 0.3s;
+    }
+  }
+
+  &--share {
+    background: #b6b7c4;
+    border: 1px solid #b6b7c4;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: var(--color-orange);
+      border: 1px solid var(--color-orange);
+    }
   }
 
   &--filled-grey {
     border: 1px solid var(--color-grey-border);
     background: var(--color-grey-border);
+
+    &:hover {
+      border: 1px solid var(--color-orange);
+      background: var(--color-orange);
+      opacity: 0.9;
+    }
+
+    &:focus,
+    &:active {
+      border: 1px solid var(--color-orange);
+      background: var(--color-orange);
+    }
+
+    &.active {
+      border: 1px solid var(--color-orange);
+      background: var(--color-orange);
+    }
   }
 
-  &--filled-grey:hover {
+  &--border-orange {
+    background: transparent;
     border: 1px solid var(--color-orange);
-    background: var(--color-orange);
-    opacity: 0.9;
-  }
+    color: var(--color-orange);
 
-  &--filled-grey:focus,
-  &--filled-grey:active {
-    border: 1px solid var(--color-orange);
-    background: var(--color-orange);
-  }
-
-  &--filled-grey.active {
-    border: 1px solid var(--color-orange);
-    background: var(--color-orange);
+    &:hover,
+    &:focus {
+      border: 1px solid var(--color-logo);
+      color: var(--color-logo);
+      transition: all 0.3s;
+    }
   }
 
   &--filled-black {
     border: 3px solid #ffffff;
     background: rgba(0, 0, 0, 0.4);
-  }
 
-  &--filled-black:hover,
-  &--filled-black:focus,
-  &--filled-black:active {
-    transition: background 0.3s;
-    background: rgba(0, 0, 0, 0.6);
+    &:hover,
+    &:focus,
+    &:active {
+      transition: background 0.3s;
+      background: rgba(0, 0, 0, 0.6);
+    }
   }
 
   &--filled-white {
     border: none;
     background: rgb(255, 255, 255, 0.2);
-  }
 
-  &--filled-white:hover,
-  &--filled-white:focus,
-  &--filled-white:active {
-    border: none;
-    background: rgb(255, 255, 255, 0.5);
+    &:hover,
+    &:focus,
+    &:active {
+      border: none;
+      background: rgb(255, 255, 255, 0.5);
+    }
   }
 
   &--filled-orange {
@@ -86,10 +116,10 @@
   &--square {
     border-radius: 5px 5px;
     margin-right: 8px;
-  }
 
-  &--square:last-child {
-    margin-right: 0;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &--size-smallest {
@@ -98,6 +128,10 @@
 
   &--size-small {
     --btn-size: 32px;
+  }
+
+  &--size-small-l {
+    --btn-size: 40px;
   }
 
   &--size-medium {
@@ -111,6 +145,7 @@
   &--size-large {
     --btn-size: 80px;
   }
+
   &--size-rectangle {
     padding: 14px 40px 15px;
     width: 100%;
@@ -122,18 +157,29 @@
     line-height: 19px;
     text-transform: uppercase;
   }
+
+  &--size-rectangle-small {
+    width: 167px;
+    height: 32px;
+
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    border-radius: 3px;
+  }
 }
 
 @media screen and (max-width: 960px) {
   .button {
     &--dark {
       background: rgb(9 0 0 / 40%);
-    }
 
-    &--dark:hover,
-    &--dark:focus,
-    &--dark:active {
-      background: rgb(9 0 0 / 60%);
+      &:hover,
+      &:focus,
+      &:active {
+        background: rgb(9 0 0 / 60%);
+      }
     }
   }
 }

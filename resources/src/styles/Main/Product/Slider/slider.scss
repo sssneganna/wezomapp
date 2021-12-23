@@ -1,4 +1,8 @@
 .slider {
+  &:not(.slick-initialized) {
+    overflow: hidden;
+  }
+
   &__item {
     margin-top: -20px;
   }

@@ -14,6 +14,7 @@
 @import "./common/triangle.scss";
 @import "./common/modal-background.scss";
 @import "./common/nav-toggle.scss";
+@import "./common/Inputs/quantity.scss";
 
 /*Header*/
 
@@ -49,7 +50,6 @@
 
 @import "./Main/Blog/blog-section.scss";
 @import "./Main/Benefits/benefits.scss";
-@import "./Main/Discounts/discounts.scss";
 @import "./Main/Blog/Search Blog/search-blog.scss";
 @import "./Main/Seo/seo-section.scss";
 @import "./Main/Seo/seo.scss";
@@ -62,17 +62,30 @@
 @import "./Main/Pet catalog/add-pet.scss";
 @import "./Main/Pet catalog/catalog-card.scss";
 @import "./Main/Pet catalog/catalog-list.scss";
+@import "./Main/Pet catalog/catalog-container.scss";
 @import "./Main/Product/product.scss";
+@import "./Main/Product/catalog-product.scss";
 @import "./Main/Product/Accordion/accordion.scss";
 @import "./Main/Product/Slider/slider.scss";
 @import "./Main/Product/Slider/slider-nav.scss";
 @import "./Main/Product/Breadcrumbs/breadcrumbs.scss";
 @import "./Main/Product/About Product/about-product.scss";
 @import "./Main/Product/About Product/about.scss";
+@import "./Main/Product/About Product/about-container.scss";
+@import "./Main/Product/About Product/about-content.scss";
+@import "./Main/Product/About Product/tabs.scss";
 @import "./Main/Product/About Product/characteristics.scss";
+@import "./Main/Product/weight.scss";
+@import "./Main/Product/product-gallery.scss";
+@import "./Main/Product/reviews.scss";
+@import "./Main/Product/share-block.scss";
+@import "./Main/Product/product-cost.scss";
+@import "./Main/Product/Feedback/feedback.scss";
+@import "./Main/Product/Feedback/product-rating.scss";
+@import "./Main/Home/home.scss";
 
 /*Footer*/
-
+@import "./Footer/Top footer/top-footer.scss";
 @import "./Footer/chat.scss";
 @import "./Footer/footer-navigation.scss";
 @import "./Footer/footer-content.scss";

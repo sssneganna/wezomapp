@@ -10,7 +10,15 @@ import { openPopup } from "./Popup/popup";
 import { slickInitNavSlider } from "./slick-carousel/slickInitNavslider.js";
 import { createAccordion } from "./Accordion/index.js";
 import { createPhoneMask } from "./jquery-mask-plugin/index.js";
+import { changeQuanity } from "./input quantity/changeQuantity.js";
+import { createTabs } from "./Tabs/tabs.js";
+import { filterContentInit } from "./filter content/filterContentInit.js";
+import { slickInit } from "./slick-carousel/index.js";
 
+slickInit();
+filterContentInit();
+createTabs();
+changeQuanity();
 slickInitNavSlider();
 createAccordion();
 createPhoneMask();

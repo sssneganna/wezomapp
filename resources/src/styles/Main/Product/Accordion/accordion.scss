@@ -7,11 +7,11 @@
     border-radius: 12px;
     margin-bottom: 8px;
 
-    &.active #{$root}__content {
+    &.is-active #{$root}__content {
       display: block;
     }
 
-    &.active #{$root}__arrow {
+    &.is-active #{$root}__arrow {
       transform: rotate(-180deg);
       transition: transform 0.3s;
     }
@@ -76,6 +76,8 @@
 
   &__right {
     width: 25%;
+    display: flex;
+    justify-content: flex-end;
   }
 
   &__price {
@@ -92,13 +94,15 @@
     font-size: 14px;
     line-height: 16px;
     color: var(--color-dark-blue-text);
+    width: 30%;
+    margin-left: 10px;
   }
 
   &__method {
     font-size: 14px;
     line-height: 16px;
     color: var(--color-dark-blue-text);
-    width: 340px;
+    width: 58%;
   }
 
   &__button-link {
@@ -127,5 +131,13 @@
       font-weight: bold;
       color: var(--color-orange);
     }
+  }
+
+  &__coast {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: var(--color-grey-text);
   }
 }

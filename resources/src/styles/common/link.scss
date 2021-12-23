@@ -61,6 +61,13 @@
     line-height: 14px;
   }
 
+  &--size-small-s {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 14px 12px;
+  }
+
   &--size-medium {
     min-width: 202px;
     height: 48px;
@@ -103,7 +110,7 @@
     &:hover,
     &:focus,
     &:active {
-      background-color: rgba(139, 139, 139, 0.2);
+      background-color: rgba(139, 139, 139, 0.9);
       transition: background-color 0.3s;
     }
   }

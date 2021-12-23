@@ -1,6 +1,5 @@
 /*Best Deals*/
 @at-root .best-deals {
-  padding-top: 50px;
   &__menu {
     margin-bottom: 32px;
     display: flex;
@@ -94,7 +93,6 @@
 
 @media screen and (max-width: 414px) {
   .best-deals {
-    padding-top: 30px;
     &__menu {
       margin-bottom: 20px;
     }

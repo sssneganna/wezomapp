@@ -1,7 +1,6 @@
 /*Seo*/
 .seo-section {
   $root: &;
-  margin-bottom: 164px;
 
   &__box {
     &.active #{$root}__content {
@@ -66,12 +65,6 @@
         #ffffff 100%
       );
     }
-  }
-}
-
-@media screen and (max-width: 1125px) {
-  .seo-section {
-    margin-bottom: 80px;
   }
 }
 

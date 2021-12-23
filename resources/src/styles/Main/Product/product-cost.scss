@@ -1,0 +1,75 @@
+.product-cost {
+  display: flex;
+  flex-direction: column;
+  margin-top: -16px;
+
+  &__item {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  &__price-info-box {
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+    width: 265px;
+  }
+
+  &__left {
+    display: flex;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-dark-blue-text);
+    width: 115px;
+    align-items: center;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__price-icon {
+    margin-right: 4px;
+  }
+
+  &__delivery {
+    font-family: Roboto Condensed;
+    font-size: 12px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: var(--color-grey-text);
+    max-width: 150px;
+    width: 100%;
+  }
+
+  &__price-info {
+    font-size: 12px;
+    line-height: 140%;
+    color: var(--color-grey-text);
+    max-width: 169px;
+  }
+
+  &__price-new {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--color-dark-blue-text);
+  }
+
+  &__price-old {
+    font-size: 15px;
+    line-height: 140%;
+    text-decoration-line: line-through;
+    color: var(--color-grey-text);
+  }
+}

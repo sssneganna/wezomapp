@@ -1,0 +1,26 @@
+.catalog-container {
+  &__catalog-list {
+    margin-bottom: 188px;
+    margin-top: 80px;
+  }
+
+  &__seo {
+    margin-bottom: 110px;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .catalog-container {
+    &__seo {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .catalog-container {
+    &__catalog-list {
+      margin-bottom: 80px;
+    }
+  }
+}

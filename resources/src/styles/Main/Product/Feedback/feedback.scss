@@ -1,0 +1,13 @@
+.feedback {
+  &__reviews {
+    display: flex;
+  }
+
+  &__left {
+    width: 60%;
+  }
+
+  &__right {
+    width: 40%;
+  }
+}
