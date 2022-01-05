@@ -1,10 +1,11 @@
 import $ from "jquery";
+import browserizr, { isIPad, isMobile } from "@wezom/browserizr";
 
 export const slickInit = async () => {
-  const $element = $(".js-slider");
-  if ($element.length) {
+  const $elImport = $(".js-import");
+  if ($elImport.length) {
     await import("./loader.js");
-    $element.slick({
+    $(".js-slider").slick({
       slidesToShow: 5,
       slidesToScroll: 5,
       arrows: false,
@@ -28,9 +29,6 @@ export const slickInit = async () => {
         {
           breakpoint: 790,
           settings: {
-            autoplay: true,
-            autoplaySpeed: 2000,
-
             slidesToShow: 2,
             slidesToScroll: 2,
           },
@@ -45,5 +43,58 @@ export const slickInit = async () => {
     $(".js-btn-prev").click(function () {
       $element.slick("slickPrev");
     });
+
+    $(".js-slider-for").slick({
+      infinite: true,
+      vertical: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      observer: true,
+      observeParents: true,
+
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            vertical: false,
+            dots: true,
+          },
+        },
+      ],
+    });
+
+    $(".js-slider-nav > li").click(function () {
+      $(".js-slider-for").slick("slickGoTo", $(this).index());
+    });
+
+    if (browserizr.detect(isIPad) || browserizr.detect(isMobile)) {
+      console.log("Yeah! Thats is IPad device");
+      mobileSlider();
+    }
+
+    /*$(window).on("resize", function () {
+      if ($(window).width() < 1025) {
+        mobileSlider();
+      }
+    });*/
+
+    function mobileSlider() {
+      $(".js-slider-product").slick({
+        swipeToSlide: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: false,
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 568,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+        ],
+      });
+    }
   }
 };

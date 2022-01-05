@@ -34,6 +34,7 @@
   }
 
   &__right {
+    position: relative;
     display: flex;
     flex-direction: column;
   }
@@ -57,6 +58,10 @@
     line-height: 140%;
     color: var(--color-grey-text);
     max-width: 169px;
+
+    svg {
+      margin-bottom: -2px;
+    }
   }
 
   &__price-new {
@@ -71,5 +76,35 @@
     line-height: 140%;
     text-decoration-line: line-through;
     color: var(--color-grey-text);
+  }
+
+  &__stickers {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .product-cost {
+    &__price-new {
+      font-size: 20px;
+    }
+
+    &__price-old {
+      font-size: 13px;
+    }
+
+    &__stickers {
+      right: 40px;
+    }
+
+    &__delivery {
+      font-size: 10px;
+    }
+
+    &__price-info {
+      max-width: none;
+    }
   }
 }

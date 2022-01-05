@@ -8,6 +8,7 @@
     "babel-loader-exclude-node-modules-except": "^1.2.1",
     "circular-progress-bar": "^2.1.0",
     "jquery": "^3.6.0",
+    "jquery-circle-progress": "^1.2.2",
     "jquery-mask-plugin": "^1.14.16",
     "magnific-popup": "^1.1.0",
     "slick-carousel": "^1.8.1"

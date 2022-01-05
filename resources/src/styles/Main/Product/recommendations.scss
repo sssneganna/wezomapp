@@ -1,0 +1,48 @@
+.recommendations {
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 15%;
+  }
+
+  &__link {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .recommendations {
+    $root: &;
+
+    &:not(.slick-initialized) {
+      overflow: hidden;
+      #{$root}__list {
+        flex-wrap: nowrap;
+      }
+
+      #{$root}__item {
+        width: 32%;
+        flex-shrink: 0;
+        margin-right: 20px;
+      }
+
+      @media screen and (max-width: 568px) {
+        #{$root}__item {
+          width: 50%;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    &__link {
+      margin-top: 45px;
+    }
+  }
+}

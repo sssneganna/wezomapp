@@ -8,7 +8,7 @@ export const openSearchMenu = () => {
     $(".search").removeClass("active");
   }
 
-  $(".modal-background").on("click", function (e) {
+  $(".modal-background").on("click", function () {
     closeSearchMenu();
   });
 };

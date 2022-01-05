@@ -1,7 +1,7 @@
 @php
 $accordion = [
     [
-        'class' => 'accordion__item is-active',
+        'class' => 'accordion__item accordion__item--border is-active',
         'data-item' => '#accordion_1',
         'data-content' => 'accordion_1',
         'title-children' => [
@@ -31,7 +31,7 @@ $accordion = [
                                 ]
     ],
     [
-        'class' => 'accordion__item',
+        'class' => 'accordion__item accordion__item--border',
         'data-item' => '#accordion_2',
         'data-content' => 'accordion_2',
         'title' => 'Варианты оплаты',
@@ -44,7 +44,7 @@ $accordion = [
                     ]
     ],
     [
-        'class' => 'accordion__item',
+        'class' => 'accordion__item accordion__item--border',
         'data-item' => '#accordion_3',
         'data-content' => 'accordion_3',
         'title' => 'Гарантия и возврат',

@@ -17,5 +17,21 @@
   li {
     margin-bottom: 20px;
     margin-left: 10px;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--color-dark-blue-text);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about-content {
+    div {
+      font-size: 12px;
+    }
+
+    li {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
   }
 }

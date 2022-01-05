@@ -14,8 +14,13 @@
                 </div>
                
             </div>
-            <button class="seo-section__button seo-section__button--show">Показать все</button>
-            <button class="seo-section__button seo-section__button--hide">Свернуть</button>
+            
+            <div class="seo-section__button seo-section__button--show">
+                <button class="button button--dashed-orange">Показать все</button>
+            </div>
+            <div class="seo-section__button seo-section__button--hide">
+            <button class="button button--dashed-orange">Свернуть</button> 
+            </div>
         </div>
     </div>
 </section>

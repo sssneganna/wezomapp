@@ -1,13 +1,54 @@
 .feedback {
   &__reviews {
     display: flex;
+    margin-top: 36px;
   }
 
   &__left {
-    width: 60%;
+    width: 70%;
+    margin-right: 140px;
   }
 
   &__right {
     width: 40%;
+  }
+
+  &__bottom {
+    margin-top: 52px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .feedback {
+    &__reviews {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    &__left {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    &__right {
+      margin-bottom: 30px;
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .feedback {
+    &__right {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .feedback {
+    &__right {
+      width: 100%;
+    }
   }
 }

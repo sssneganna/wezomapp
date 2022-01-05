@@ -1,9 +1,38 @@
 .slider {
+  $root: &;
   &:not(.slick-initialized) {
     overflow: hidden;
+    height: 480px;
+    padding: 20px 10px;
+    margin-bottom: 25px;
+
+    #{$root}__item {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 414px) {
+      & {
+        height: 250px;
+        margin-bottom: 40px;
+      }
+    }
   }
 
   &__item {
     margin-top: -20px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .slider {
+    &__item {
+      iframe {
+        height: 374px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
   }
 }

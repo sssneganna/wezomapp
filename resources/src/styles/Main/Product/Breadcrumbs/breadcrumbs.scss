@@ -1,6 +1,7 @@
 .breadcrumbs {
   &__container {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__link {
@@ -19,5 +20,13 @@
 
   &__icon {
     margin-left: 8px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .breadcrumbs {
+    &__link {
+      font-size: 10px;
+    }
   }
 }

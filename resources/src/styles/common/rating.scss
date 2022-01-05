@@ -40,5 +40,9 @@
     line-height: 14px;
     color: var(--link-bg);
     margin-left: 3px;
+
+    &--dark {
+      color: var(--color-dark-blue-text);
+    }
   }
 }

@@ -6,3 +6,12 @@
     margin-bottom: 32px;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .about {
+    &__title {
+      font-size: 27px;
+      margin-bottom: 25px;
+    }
+  }
+}

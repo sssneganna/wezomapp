@@ -199,7 +199,7 @@ $list = [
             </div>
         </div>
         <div class="best-deals__slider">
-            <div class="cards js-slider">
+            <div class="cards js-import js-slider">
                 @foreach($list as $item)
                 <div class="cards__item">
                     @include("widgets.card", ['item' => $item] )

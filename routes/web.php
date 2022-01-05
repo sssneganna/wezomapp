@@ -23,6 +23,10 @@ Route::get('/product', function () {
     return view('catalog-product');
 });
 
+Route::get('/catalog-main', function () {
+    return view('catalog-page');
+});
+
 Route::post('/search', function () {
     return view('widgets.search-results');
 });

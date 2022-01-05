@@ -38,22 +38,22 @@ $tabsList= [
     'button' => [
     [
         'name' => 'Описание',
-        'class' => 'tabs__button js-tab-trigger is-active',
+        'class' => 'tabs__button tabs__button--size-small js-tab-trigger is-active',
         'data' => '1'
     ],
     [
         'name' => 'Состав',
-        'class' => 'tabs__button js-tab-trigger',
+        'class' => 'tabs__button tabs__button--size-small js-tab-trigger',
         'data' => '2'
     ],
     [
         'name' => 'Видеообзор',
-        'class' => 'tabs__button js-tab-trigger',
+        'class' => 'tabs__button tabs__button--size-small js-tab-trigger',
         'data' => '3'
     ],
     [
         'name' => 'Руководство по кормлению',
-        'class' => 'tabs__button js-tab-trigger',
+        'class' => 'tabs__button tabs__button--size-small js-tab-trigger',
         'data' => '4'
     ]
     ],
@@ -80,9 +80,9 @@ $tabsList= [
                                                         корректировки для поддержания оптимального веса питомца. Не рекомендуется Кошкам Щенкам
                                                         Беременным и кормящим сукам.',
                                             'list' => [
-                                                        ['item' => 'Омега-6 жирные кислоты и витамин Е для красивой кожи и шерсти'],
-                                                        ['item' => 'Высококачественные ингредиенты: ягненок и рис для собак с чувствительным       пищеварением  '],
-                                                        ['item' => 'Высококачественный белок для поддержания мышечной массы.']
+                                                        ['item' => '• Омега-6 жирные кислоты и витамин Е для красивой кожи и шерсти'],
+                                                        ['item' => '• Высококачественные ингредиенты: ягненок и рис для собак с чувствительным       пищеварением  '],
+                                                        ['item' => '• Высококачественный белок для поддержания мышечной массы.']
                                                     ],
                                             'title2' => ''
                                         ]
@@ -95,18 +95,8 @@ $tabsList= [
                         'content' => [
                                         [
                                             'text' => '',
-                                            'title' => 'Добавки (в 1 кг):',
-                                            'list' =>   [
-                                                            ['item' => 'витамин А - 16 000 ME'],
-                                                            ['item' => 'витамин D3 - 1 000 ME '],
-                                                            ['item' => 'Е1 (железо) - 35 мг'],
-                                                            ['item' => 'Е2 (йод) - 3,5 мг'],
-                                                            ['item' => 'Е4 (медь) – 11 мг'],
-                                                            ['item' => 'Е5 (марганец) - 45 мг'],
-                                                            ['item' => 'Е6 (цинк) - 129 мг'],
-                                                            ['item' => 'технологические добавки: клиноптилолит осадочного происхождения - 5 г'],
-                                                            ['item' => 'консерванты']
-                                                        ],
+                                            'title' => '',
+                                            'list' =>   [],
                                             'title2' => 'Состав:',
                                             'text2' => 'дегидратированные протеины мяса птицы, кукуруза, кукурузная мука, животные жиры, пшеница, дегидратированной протеины свинины*, рис, гидролизат белков животного происхождения, кукурузный глютен, свекольный жом, минеральные вещества, рыбий жир, соевое масло, дрожжи и их частицы, гидролизат из панциря ракообразных (источник глюкозамина), гидролизат из хряща (источник хондроитина).',
                                         
@@ -152,67 +142,64 @@ $tabsList= [
 <div class="about-product">
     <div class="container container--medium-big">
         <div class="about-product__container">
-    <div class="about-product__left">
-        <div class="about">
-            <div class="about__title">О товаре</div>
-            <div class="about__tabs">
-                <div class="tabs js-tab">
-                <ul class="tabs__buttons">
-                    @foreach($tabsList['button'] as $button)
-               <li class="{{$button['class']}}" data-tab="{{$button['data']}}">{{$button['name']}}</li>
-               @endforeach
-                </ul>
-                @foreach($tabsList['content'] as $content)
-                <div class="{{$content['class']}}" data-tab="{{$content['data']}}">
-                    <div class="tabs__content-overflow">
-                    
-                    <div class="about-container">
-            <div class="about-container__box js-show-content">
-            <div class="about-container__content">
-               @foreach($content['content'] as $contentItem)
-                <div class="about-content">
-                <div>{{$contentItem['text']}}</div>
-<h3>{{$contentItem['title']}}</h3>
-<ul>
-    @foreach($contentItem['list'] as $li)
-    <li>{{$li['item']}} </li>
- 
-        @endforeach
-</ul>
-<h3>{{$contentItem['title2']}}</h3>
-<div>{{$contentItem['text2']}}</div>
-  </div>
-  @endforeach
-  </div>
-  <button class="about-container__button about-container__button--show">Читать полностью</button>
-            <button class="about-container__button about-container__button--hide">Свернуть</button>
+            <div class="about-product__left">
+                <div class="about">
+                    <div class="about__title">О товаре</div>
+                    <div class="about__tabs">
+                        <div class="tabs js-tab" data-tabs-ns = "product">
+                            <ul class="tabs__buttons tabs__buttons--border">
+                            @foreach($tabsList['button'] as $button)
+                                <li class="{{$button['class']}}" data-tab="{{$button['data']}}">{{$button['name']}}</li>
+                            @endforeach
+                            </ul>
+                            @foreach($tabsList['content'] as $content)
+                            <div class="{{$content['class']}}" data-tab="{{$content['data']}}">
+                                <div class="tabs__content-overflow">
+                                    <div class="about-container">
+                                        <div class="about-container__box js-show-content">
+                                            <div class="about-container__content">
+                                                @foreach($content['content'] as $contentItem)
+                                                <div class="about-content">
+                                                    <div>{{$contentItem['text']}}</div>
+                                                    <h3>{{$contentItem['title']}}</h3>
+                                                    <ul>
+                                                        @foreach($contentItem['list'] as $li)
+                                                        <li>{{$li['item']}} </li>
+                                                        @endforeach
+                                                    </ul>
+                                                    <h3>{{$contentItem['title2']}}</h3>
+                                                    <div>{{$contentItem['text2']}}</div>
+                                                </div>
+                                                @endforeach
+                                            </div>
+                                            <div class="about-container__button about-container__button--show">
+                                                <button class="button button--border-orange button--size-rectangle-small">Читать полностью</button>
+                                            </div>
+                                            <div class="about-container__button about-container__button--hide">
+                                                <button class="button button--border-orange button--size-rectangle-small">Свернуть</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
             </div>
-</div>
-</div>
-</div>
-
-            @endforeach
- 
-           
-</div>
-        </div>
-        </div>
-    </div>
-    <div class="about-product__right">
-        <div class="characteristics">
-            <div class="characteristics__title">Характеристики</div>
-            <ul class="characteristics__list">
-                @foreach($characteristicsList as $item)
-            <li class="characteristics__item">
-                    <span class="characteristics__name">{{$item['name']}}</span>
-                    <span class="characteristics__value">{{$item['value']}}</span>
-                </li>
-                @endforeach
-            </ul>
-        </div>
-    </div>
-    
- 
-    </div>  
+            <div class="about-product__right">
+                <div class="characteristics">
+                    <div class="characteristics__title">Характеристики</div>
+                    <ul class="characteristics__list">
+                        @foreach($characteristicsList as $item)
+                        <li class="characteristics__item">
+                            <span class="characteristics__name">{{$item['name']}}</span>
+                            <span class="characteristics__value">{{$item['value']}}</span>
+                        </li>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
+        </div>  
     </div>
 </div>

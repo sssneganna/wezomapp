@@ -74,3 +74,11 @@
     stroke-width: 2;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .product-gallery {
+    &__share {
+      margin-left: 0;
+    }
+  }
+}

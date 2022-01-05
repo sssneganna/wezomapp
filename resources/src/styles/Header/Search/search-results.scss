@@ -1,6 +1,7 @@
 .search-results {
   display: flex;
   margin-right: -36px;
+  width: 100%;
 
   &__column {
     width: 33.33%;
@@ -77,6 +78,26 @@
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
       }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .search-results {
+    flex-wrap: wrap;
+    margin-bottom: -20px;
+
+    &__column {
+      width: 43%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .search-results {
+    &__column {
+      width: 100%;
     }
   }
 }

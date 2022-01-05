@@ -22,25 +22,6 @@
     }
   }
 
-  &__button {
-    color: var(--color-orange);
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 14px;
-    border: none;
-    background: transparent;
-    padding: 0 0 3px 0;
-    border-bottom: 1px dashed var(--color-orange);
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: var(--color-green);
-      transition: all 0.3s;
-      border-bottom: 1px dashed var(--color-green);
-    }
-  }
-
   &__button--hide {
     display: none;
   }

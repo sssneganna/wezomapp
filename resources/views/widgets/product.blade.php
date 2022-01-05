@@ -33,7 +33,8 @@ $priceList = [
         'left-text' => 'Цена со скидкой:',
         'price-new' => '1241,00 ₴',
         'price-old' => '1280,00 ₴',
-        'info-delivery' => 'Бесплатная доставка для этого товара'
+        'info-delivery' => 'Бесплатная доставка для этого товара',
+        'sticker' => '-5%'
 
     ],
     [
@@ -80,10 +81,31 @@ $weightList = [
     <div class="container">
         <h1 class="product__title">Royal Canin Maxi Adult Сухой корм для собак крупных пород, 7 кг</h1>
         <div class="product__flex-container">
+        <div class="product__top product__top--show">
+                <a href="#" class="product__brand">
+                    <img src="/assets/product-brand.png" alt="a"></img>
+                    <span class="product__brand-text">Чехия</span>
+                </a>
+                <div class="product__rating">
+                    <div class="rating">
+                        @foreach($rating as $item)
+                        @for($i=1; $i<=5; $i++)
+                        <span class="rating__star rating__star--size {{$i<=$item['rating'] ? 'rating__star--checked' : ''}}"></span>
+                        @endfor
+                        @endforeach
+                    </div>
+                    <div  class="product__rating-link">
+                        <a class="link link--dashed" href="#reviews-questions">Отзывы (65)</a>
+                    </div>
+                    <div class="product__rating-link">
+                        <a class="link link--dashed" href="#reviews-questions">Вопросы (3)</a>
+                    </div>
+                </div>
+            </div>
             <div class="product__left">
                 <div class="product-gallery">
                     <div class="product-gallery__nav">
-                <ul class="slider-nav js-slider-nav">
+                <ul class="slider-nav js-import js-slider-nav">
                     @foreach($slider as $item)
                     <li class="slider-nav__item">
                         @if(isset($item['img']))
@@ -169,7 +191,7 @@ $weightList = [
                 </div>
             </div>
         <div class="product__right">
-            <div class="product__top">
+            <div class="product__top product__top--hide">
                 <a href="#" class="product__brand">
                     <img src="/assets/product-brand.png" alt="a"></img>
                     <span class="product__brand-text">Чехия</span>
@@ -231,7 +253,13 @@ $weightList = [
                                 <div class="product-cost__right">
                                     <span class="product-cost__price-new">{{$item['price-new']}}</span>
                                 <span class="product-cost__price-old">{{$item['price-old']}}</span>
-
+                                @if(isset($item['sticker']))
+                                <span class="product-cost__stickers">
+                                <span class="stickers">
+                                <span class="sticker sticker--pink">{{$item['sticker']}}</span>
+                            </span>
+</span>
+@endif
                             </div>
                             </div>
                             <div class="product-cost__delivery">{{$item['info-delivery']}}</div>

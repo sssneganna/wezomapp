@@ -1,5 +1,6 @@
 /*Button*/
 .chat {
+  $root: &;
   display: flex;
   align-items: center;
   background: transparent;
@@ -19,7 +20,7 @@
   &:hover,
   &:focus,
   &:active {
-    .chat__icon {
+    #{$root}__icon {
       color: var(--color-white);
       transition: color 0.3s;
     }

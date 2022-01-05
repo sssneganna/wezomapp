@@ -13,5 +13,8 @@
     <div class="catalog-product__feedback">
         @include("widgets.feedback")
     </div>
+    <div class="catalog-product__cards">
+        @include("widgets.recommendations")
+    </div>
 </div>           
 @endsection

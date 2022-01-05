@@ -13,8 +13,10 @@
 @import "./common/layout.scss";
 @import "./common/triangle.scss";
 @import "./common/modal-background.scss";
+@import "./common/circle.scss";
 @import "./common/nav-toggle.scss";
 @import "./common/Inputs/quantity.scss";
+@import "./common/pagination.scss";
 
 /*Header*/
 
@@ -80,9 +82,14 @@
 @import "./Main/Product/reviews.scss";
 @import "./Main/Product/share-block.scss";
 @import "./Main/Product/product-cost.scss";
+@import "./Main/Product/product-recommendations.scss";
+@import "./Main/Product/recommendations.scss";
 @import "./Main/Product/Feedback/feedback.scss";
 @import "./Main/Product/Feedback/product-rating.scss";
 @import "./Main/Home/home.scss";
+@import "./Main/Catalog main/catalog-main.scss";
+@import "./Main/Catalog main/filter.scss";
+@import "./Main/Catalog main/catalog-page.scss";
 
 /*Footer*/
 @import "./Footer/Top footer/top-footer.scss";

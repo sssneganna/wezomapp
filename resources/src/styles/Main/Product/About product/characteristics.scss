@@ -18,6 +18,7 @@
     line-height: 16px;
     color: var(--color-grey-text);
     width: 50%;
+    margin-right: 10px;
   }
 
   &__value {
@@ -26,5 +27,22 @@
     font-size: 14px;
     line-height: 16px;
     color: var(--color-dark-blue-text);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .characteristics {
+    &__title {
+      font-size: 27px;
+      margin-bottom: 25px;
+    }
+
+    &__name {
+      font-size: 12px;
+    }
+
+    &__value {
+      font-size: 12px;
+    }
   }
 }
