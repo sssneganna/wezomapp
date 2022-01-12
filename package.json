@@ -60,13 +60,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sssneganna/practice.git"
+    "url": "git+https://github.com/sssneganna/wezomapp.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sssneganna/practice/issues"
+    "url": "https://github.com/sssneganna/wezomapp/issues"
   },
-  "homepage": "https://github.com/sssneganna/practice#readme"
+  "homepage": "https://github.com/sssneganna/wezomapp#readme"
 }
