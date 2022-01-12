@@ -23,7 +23,7 @@ Route::get('/product', function () {
     return view('catalog-product');
 });
 
-Route::get('/catalog-main', function () {
+Route::get('/catalog-page', function () {
     return view('catalog-page');
 });
 

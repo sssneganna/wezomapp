@@ -1,0 +1,59 @@
+.range-slider {
+  &__form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    outline: none;
+    width: 50%;
+    height: 48px;
+    background: #f4f5f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 0 12px;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-dark-blue-text);
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid var(--color-orange);
+      transition: border 0.3s;
+    }
+  }
+
+  &__line {
+    width: 26px;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-dark-blue-text);
+  }
+
+  &__button {
+    width: 46px;
+    height: 46px;
+    background: var(--color-orange);
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid var(--color-orange);
+    flex-shrink: 0;
+    margin-left: 8px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: var(--color-logo);
+      border: 1px solid var(--color-logo);
+      transition: background 0.3s;
+    }
+  }
+}

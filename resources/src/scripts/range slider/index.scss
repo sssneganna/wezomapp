@@ -1,0 +1,15 @@
+@import "~ion-rangeslider/css/ion.rangeSlider.css";
+@import "~ion-rangeslider/css/ion.rangeSlider.min.css";
+
+.irs--round .irs-handle {
+  border: 6px solid var(--color-orange);
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+.irs--round .irs-bar {
+  top: 36px;
+  height: 3px;
+  background-color: var(--color-orange);
+}

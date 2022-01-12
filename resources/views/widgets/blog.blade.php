@@ -81,22 +81,25 @@ $blogMenu = [
         <ul class="blog-gallery">
             @foreach($blog as $item)
             <li class="blog-gallery__item">
-                <div class="blog-gallery__sticker">
+               
+                <div class="blog-gallery__card">
+                    <div class="blog-gallery__top">
+                    <div class="blog-gallery__stickers">
                     @foreach($item['stickers'] as $sticker)
                     <div class="stickers">
                         <span class="sticker sticker--{{$sticker['color']}}">{{$sticker['text']}}</span>
                     </div>
                     @endforeach
                 </div>
-                <div class="blog-gallery__card">
-                    <div class="blog-gallery__top">
-                        <a href="#" class="blog-gallery__img-link">
+                        <a href="{{$item['url']}}" class="blog-gallery__img-link">
                             <img src="{{$item['image']}}" alt="1">
                         </a>
                         @if(isset($item['video']))
                         <div class="blog-gallery__button">
                             <a href="{{$item['video']}}" data-popup data-type="iframe" class="button button--size-medium-big button--filled-black">
-                                <span class="triangle"></span>
+                            <svg  width="17" height="20">
+                    <use xlink:href="./dist/spritemap.svg#sprite-triangle"></use>
+                </svg>
                             </a>
                         </div>
                         @endif

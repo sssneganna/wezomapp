@@ -1,8 +1,9 @@
 @php
 $accordion = [
     [
-        'class' => 'accordion__item accordion__item--border is-active',
-        'data-item' => '#accordion_1',
+        'class' => 'accordion__header js-tab-trigger is-active',
+        'class-content' => 'accordion__content js-tab-content is-active',
+        'data-item' => 'accordion_1',
         'data-content' => 'accordion_1',
         'title-children' => [
                                 [
@@ -31,8 +32,9 @@ $accordion = [
                                 ]
     ],
     [
-        'class' => 'accordion__item accordion__item--border',
-        'data-item' => '#accordion_2',
+        'class' => 'accordion__header js-tab-trigger',
+        'class-content' => 'accordion__content js-tab-content',
+        'data-item' => 'accordion_2',
         'data-content' => 'accordion_2',
         'title' => 'Варианты оплаты',
         'content' => [
@@ -44,8 +46,9 @@ $accordion = [
                     ]
     ],
     [
-        'class' => 'accordion__item accordion__item--border',
-        'data-item' => '#accordion_3',
+        'class' => 'accordion__header js-tab-trigger',
+        'class-content' => 'accordion__content js-tab-content',
+        'data-item' => 'accordion_3',
         'data-content' => 'accordion_3',
         'title' => 'Гарантия и возврат',
         'content' => [
@@ -59,10 +62,10 @@ $accordion = [
 ];
 @endphp
 
-<div class="accordion">
+<div class="accordion js-tab">
     @foreach($accordion as $item)
-    <div class="{{$item['class']}}" data-collapse="{{$item['data-item']}}">
-        <div class="accordion__header">
+    <div class="accordion__item accordion__item--border">
+        <div class="{{$item['class']}}" data-type-tab="single" data-tab="{{$item['data-item']}}">
             @if(isset($item['title-children']))
             @foreach($item['title-children'] as $title)
             <div class="accordion__title">
@@ -78,7 +81,7 @@ $accordion = [
                 <use xlink:href="./dist/spritemap.svg#sprite-arrow-accordion"></use>
             </svg>
         </div>
-        <div class="accordion__content" id="{{$item['data-content']}}">
+        <div class="{{$item['class-content']}}" data-tab="{{$item['data-content']}}">
         @if(isset($item['accordion-content']))
         @foreach($item['accordion-content'] as $itemContent)
             <div class="accordion__row">

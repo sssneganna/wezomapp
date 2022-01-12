@@ -6,7 +6,6 @@
   margin-top: 48px;
 
   &__item {
-    position: relative;
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -24,10 +23,17 @@
   &__top {
     margin-bottom: 16px;
     position: relative;
+    max-width: 395px;
   }
 
   &__bottom {
     display: flex;
+  }
+
+  &__stickers {
+    position: absolute;
+    top: 16px;
+    left: 16px;
   }
 
   &__date {
@@ -60,7 +66,6 @@
     justify-content: center;
 
     img {
-      max-width: 395px;
       width: 100%;
     }
 

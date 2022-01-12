@@ -33,6 +33,8 @@
       background: #f4f5f8;
       font-weight: bold;
       color: var(--color-dark-blue-text);
+      pointer-events: none;
+      cursor: none;
     }
   }
 

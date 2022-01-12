@@ -243,7 +243,9 @@ $catalogList = [
                     <div class="catalog-card__button-link">
                         <a href="{{$item['url-btn']}}" class="link--arrow-white">
                             <span> Смотеть все</span>
-                            <span class="arrow arrow--small arrow--color-white arrow--next"></span>
+                            <svg width="8" height="8">
+                    <use xlink:href="./dist/spritemap.svg#sprite-arrow-header"></use>
+                </svg>
                         </a>
                     </div>
                     </div>

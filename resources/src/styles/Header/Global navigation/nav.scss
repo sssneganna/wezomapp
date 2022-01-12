@@ -1,4 +1,5 @@
 .nav {
+  $root: &;
   width: 50%;
   display: flex;
   align-items: flex-end;
@@ -29,10 +30,11 @@
     transition: color 0.3s;
   }
 
-  &__item:hover .arrow--next-light-grey::before {
-    border-bottom: 2px solid var(--color-logo);
-    border-right: 2px solid var(--color-logo);
-    transition: all 0.3s;
+  &__item:hover #{$root}__arrow {
+    svg {
+      stroke: var(--color-logo);
+      transition: stroke 0.3s;
+    }
   }
 
   &__item:hover &__link {
@@ -45,9 +47,10 @@
     transition: color 0.3s;
   }
 
-  &__item--active .arrow--next-light-grey::before {
-    border-bottom: 2px solid var(--color-logo);
-    border-right: 2px solid var(--color-logo);
+  &__item--active #{$root}__arrow {
+    svg {
+      stroke: var(--link-bg);
+    }
   }
 
   &__item--active {
@@ -107,5 +110,13 @@
     line-height: 19px;
     text-transform: uppercase;
     color: var(--color-dark-blue-text);
+  }
+
+  &__arrow {
+    svg {
+      stroke: var(--link-bg);
+      stroke-width: 2px;
+      transform: rotate(-90deg);
+    }
   }
 }

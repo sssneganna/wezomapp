@@ -32,7 +32,7 @@ $filterList = [
     [
         'title' => 'Бренд',
         'class' => 'is-active',
-        'data-item' => '#value_1',
+        'data-item' => 'value_1',
         'data-content' => 'value_1',
         'value' => [
             [
@@ -83,10 +83,17 @@ $filterList = [
             ]
             ],
             [
+        'title' => 'Цена, ₴ ',
+        'class' => 'is-active',
+        'data-item' => 'value_2',
+        'data-content' => 'value_2',
+        'range-slider' => []
+        ],
+            [
                 'title' => 'Класс',
                 'class' => 'is-active',
-                'data-item' => '#value_2',
-        'data-content' => 'value_2',
+                'data-item' => 'value_3',
+        'data-content' => 'value_3',
                 'value' => [
                     [
                         'name' => 'Премиум',
@@ -109,8 +116,8 @@ $filterList = [
     [
                 'title' => 'Ингредиенты',
                 'class' => '',
-                'data-item' => '#value_3',
-        'data-content' => 'value_3',
+                'data-item' => 'value_4',
+        'data-content' => 'value_4',
                 'value' => [
                     [
                         'name' => 'Премиум',
@@ -133,8 +140,8 @@ $filterList = [
     [
                 'title' => 'Особенности',
                 'class' => '',
-                'data-item' => '#value_4',
-        'data-content' => 'value_4',
+                'data-item' => 'value_5',
+        'data-content' => 'value_5',
                 'value' => [
                     [
                         'name' => 'Премиум',
@@ -157,8 +164,8 @@ $filterList = [
                 [
                 'title' => 'Вес упаковки',
                 'class' => '',
-                'data-item' => '#value_5',
-        'data-content' => 'value_5',
+                'data-item' => 'value_6',
+        'data-content' => 'value_6',
                 'value' => [
                     [
                         'name' => '2,72кг',
@@ -181,8 +188,8 @@ $filterList = [
                 [
                 'title' => 'Порода',
                 'class' => '',
-                'data-item' => '#value_6',
-        'data-content' => 'value_6',
+                'data-item' => 'value_7',
+        'data-content' => 'value_7',
                 'value' => [
                     [
                         'name' => 'Малые',
@@ -208,10 +215,12 @@ $filterList = [
 @endphp
 
 <div class="catalog-main__top-mob">
-    <button class="button-close"></button>
+    <button class="button-close js-is-active"></button>
    
 </div>
+<div class="catalog-main__add-pet">
 @include("widgets.add-pet")
+</div>
 <div class="filter">
     @foreach($filterMenu as $menu)
   
@@ -230,25 +239,71 @@ $filterList = [
 </div>
 </div>
 @endforeach
-        
-        <div class="filter">
+<div class="filter">
+    <div class="filter__item">
+        <a href="#" class="filter__value is-active">
+    <svg class="card__icon" width="32" height="32">
+                    <use xlink:href="./dist/spritemap.svg#sprite-price-icon"></use>
+                </svg>
+                <span class="filter__auto-order">Автозаказ</span>
+                <svg width="14" height="14">
+                                        <use xlink:href="./dist/spritemap.svg#sprite-price-icon-info"></use>
+                                    </svg>  
+                </a>
+                <div class="filter__info">Экономия до 10% на заказах</div>
+    </div>
+</div>
+        <div class="filter js-tab">
         @foreach($filterList as $item)
-        <div class="filter__item accordion__item accordion__item--border-line  {{$item['class']}}"  data-collapse="{{$item['data-item']}}">
+        <div class="filter__item accordion__item">
+       <div class="filter__header accordion__header accordion__header--filter js-tab-trigger {{$item['class']}}" data-type-tab="single" data-tab="{{$item['data-item']}}">
         <div class="filter__title">{{$item['title']}}</div>
-        <svg class="filter__arrow" width="19" height="11">
+        <svg class="filter__arrow accordion__arrow accordion__arrow--filter" width="19" height="11">
                 <use xlink:href="./dist/spritemap.svg#sprite-arrow-filter"></use>
             </svg>
-        <div class="filter__values accordion__content" id="{{$item['data-content']}}">
+            </div>
+        <div class="filter__values accordion__content accordion__content--filter js-tab-content {{$item['class']}}" data-tab="{{$item['data-content']}}">
+      
+        
+        @if(isset ($item['value']))
         @foreach($item['value'] as $value)
+       
             <a href="{{$value['href']}}" class="filter__value is-active">
+           
                 <span>{{$value['name']}}</span>
                 <span class="filter__value-number">({{$value['number']}})</span>
+               
             </a>
+
+
             @endforeach
+            <button class="filter__button-show">+ показать все</button>
+            @endif
+           
+           
+            @if(isset ($item['range-slider']))
+      
+      <div class="range-slider">
+                              <form class="range-slider__form" action="#">
+                                  <input class="range-slider__input js-min"  placeholder="от:" min="410" name="cost_min" value="from" autocomplete="off">
+                                  <div class="range-slider__line">-</div>
+                                  <input class="range-slider__input js-max"  placeholder="до:" max="6597" name="cost_max" value="to"  autocomplete="off">
+                                  <button type="submit" class="range-slider__button ">OK</button>
+                              </form>
+                              <div class="range-slider__container">
+                              <input class="js-range-slider"  data-min="410" data-max="6597" name="my_range" value="">
+                              </div>
+                          </div>
+                          
+      @endif
+            
+      
+ 
         </div>
 
-      
+        
 </div>
+
     
     @endforeach
     </div>

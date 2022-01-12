@@ -1,4 +1,5 @@
 .catalog-main {
+  $root: &;
   &__box {
     display: flex;
   }
@@ -10,7 +11,7 @@
   }
 
   &__body {
-    width: 100%;
+    width: 80%;
   }
 
   &__top {
@@ -21,11 +22,21 @@
     width: 100%;
   }
 
+  &__add-pet {
+    margin-bottom: 16px;
+  }
+
+  &__flex {
+    display: flex;
+    align-items: center;
+  }
+
   &__title {
     font-weight: bold;
     font-size: 44px;
     line-height: 52px;
     color: var(--color-dark-blue-text);
+    margin-right: 16px;
   }
 
   &__info-count {
@@ -54,11 +65,78 @@
 
   &__slider {
     margin-bottom: 24px;
+    margin-top: 24px;
+    width: 100%;
+  }
+
+  &__select {
+    width: 260px;
+  }
+
+  &__info-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__info {
+    display: flex;
+    margin-bottom: 35px;
+    align-items: center;
+  }
+
+  &__info-text {
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--color-grey-text);
+    margin-left: 8px;
+  }
+
+  &__show-more {
+    margin: 78px 0 54px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__more-btn {
+    outline: none;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+
+    svg {
+      color: var(--color-orange);
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      svg {
+        color: var(--color-logo);
+        transition: color 0.3s;
+      }
+    }
+  }
+
+  &__more-text {
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--color-dark-blue-text);
+    margin-left: 24px;
+    max-width: 136px;
   }
 }
 
 @media screen and (max-width: 1025px) {
   .catalog-main {
+    &__body {
+      width: 100%;
+    }
+
+    &__add-pet {
+      display: none;
+    }
+
     &__mobile-controls {
       display: flex;
     }

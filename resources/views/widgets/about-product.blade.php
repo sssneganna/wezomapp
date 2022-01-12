@@ -146,14 +146,14 @@ $tabsList= [
                 <div class="about">
                     <div class="about__title">О товаре</div>
                     <div class="about__tabs">
-                        <div class="tabs js-tab" data-tabs-ns = "product">
+                        <div class="tabs js-tab" data-tabs-ns="product">
                             <ul class="tabs__buttons tabs__buttons--border">
                             @foreach($tabsList['button'] as $button)
-                                <li class="{{$button['class']}}" data-tab="{{$button['data']}}">{{$button['name']}}</li>
+                                <li class="{{$button['class']}}" data-type-tab="multi" data-tabs-ns="product" data-tab="{{$button['data']}}">{{$button['name']}}</li>
                             @endforeach
                             </ul>
                             @foreach($tabsList['content'] as $content)
-                            <div class="{{$content['class']}}" data-tab="{{$content['data']}}">
+                            <div class="{{$content['class']}}" data-tabs-ns="product" data-tab="{{$content['data']}}">
                                 <div class="tabs__content-overflow">
                                     <div class="about-container">
                                         <div class="about-container__box js-show-content">

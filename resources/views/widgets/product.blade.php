@@ -18,7 +18,8 @@ $slider = [
         ],
         [
             'video' => [],
-            'video-gallery' => 'https://www.youtube.com/embed/pXeTgZWTvbQ'
+            'video-gallery' => 'https://www.youtube.com/watch?v=e_BUgKozqZw',
+            'gallery' => '/assets/slider-big-1.jpg'
         ]
     ];
 
@@ -150,12 +151,19 @@ $weightList = [
                     <div class="slider js-slider-for">
                         @foreach($slider as $item)
                         <div class="slider__item">
-                            @if(isset($item['gallery']))
+                        
                             <img class="slider__image" src="{{$item['gallery']}}"  alt="image1">
-                            @endif
+                           
                             @if(isset($item['video-gallery']))
-                            <iframe width="100%" height="480" src="{{$item['video-gallery']}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            @endif
+                            <div class="slider__gallery-button">
+                            <a href="{{$item['video-gallery']}}" data-popup data-type="iframe" class="button button--size-medium-big button--filled-black">
+                            <svg  width="17" height="20">
+                    <use xlink:href="./dist/spritemap.svg#sprite-triangle"></use>
+                </svg>
+                            </a>
+                        </div>
+                        @endif
+                           
                         </div>
                         @endforeach
                     </div>

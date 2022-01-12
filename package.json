@@ -7,6 +7,7 @@
     "@wezom/browserizr": "^9.0.0",
     "babel-loader-exclude-node-modules-except": "^1.2.1",
     "circular-progress-bar": "^2.1.0",
+    "ion-rangeslider": "^2.3.1",
     "jquery": "^3.6.0",
     "jquery-circle-progress": "^1.2.2",
     "jquery-mask-plugin": "^1.14.16",

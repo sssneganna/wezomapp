@@ -261,42 +261,77 @@ $navigation = [
     'url' => '#'
     ],
  ];
+
+ $topMenu = [
+    [
+        'text' => 'Магазины',
+        'url' => '#',
+        'class' => 'active'
+    ],
+    [
+        'text' => 'Блог',
+        'url' => '#',
+        'class' => ''
+    ],
+    [
+        'text' => 'Покупателям',
+        'url' => '#',
+        'class' => ''
+    ],
+];
+
+$languageList = [
+    [
+        'lang' => 'укр',
+        'url' => '#',
+        'class' => ''
+    ],
+    [
+        'lang' => 'рус',
+        'url' => '#',
+        'class' => 'active'
+    ],
+    [
+        'lang' => 'eng',
+        'url' => '#',
+        'class' => ''
+    ],
+];
  @endphp
    
 <header class="header">
     <div class="container container--big">
-        <div class="header__top">
-            <div class="top-header-left">
-                <div class="top-header-left__city">
+        <div class="top-header">
+            <div class="top-header__left">
+                <div class="top-header__city">
                     <button class="city">
                         <svg class="city__icon" width="12" height="14">
                             <use xlink:href="./dist/spritemap.svg#sprite-geolocation"></use>
                         </svg>
                         <span class="city__text">Херсон</span></button>
                     </div>
-                    <div class="top-header-left__menu">
+                    <div class="top-header__menu">
                         <ul class="menu">
+                            @foreach($topMenu as $topMenuItem)
                             <li class="menu__item">
-                                <div class="menu__link active">Магазины</div>
+                                <a href="{{$topMenuItem['url']}}" class="menu__link {{$topMenuItem['class']}}">{{$topMenuItem['text']}}</a>
                             </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Блог</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">Покупателям</a>
-                            </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
-                <div class="top-header-right">
-                    <div class="top-header-right__phone">
+                <div class="top-header__right">
+                    <div class="top-header__phone">
                         <div class="phone  js-active">
                             <div class="phone__text">Консультация:</div>
                             <div class="phone__show-popup">
                                 <a class="phone__link" href="tel:+380444903100">
                                     <span>(044) 490 31 00</span>
+                                    <svg width="8" height="8">
+                    <use xlink:href="./dist/spritemap.svg#sprite-arrow-header"></use>
+                </svg>
                                 </a>
-                                <button class="arrow  arrow--small arrow--color-grey arrow--down"></button>
+                                
                                 <ul class="phone__popup">
                                     <li class="phone__item">
                                         <a class="phone__link" href="tel:+380444903105">
@@ -312,31 +347,27 @@ $navigation = [
                             </div>
                         </div>
                     </div>
-                    <div class="top-header-right__language">
+                    <div class="top-header__language">
                         <ul class="language">
+                            @foreach($languageList as $languageItem)
                             <li class="language__item">
-                                <div class="language__link active">укр</div>
+                                <a href="{{$languageItem['url']}}" class="language__link {{$languageItem['class']}}">{{$languageItem['lang']}}</a>
                             </li>
-                            <li class="language__item">
-                                <a class="language__link" href="#">рус</a>
-                            </li>
-                            <li class="language__item">
-                                <a class="language__link" href="#">eng</a>
-                            </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="header__bottom">
-                <div class="bottom-header-left">
-                    <div class="bottom-header-left__logo">
+            <div class="bottom-header">
+                <div class="bottom-header__left">
+                    <div class="bottom-header__logo">
                         <a class="logo logo--none" target="blank" href="https://wezom.com.ua">
                             <svg class="logo__icon" width="114" height="41">
                                 <use xlink:href="./dist/spritemap.svg#sprite-wezom-logo"></use>
                             </svg>
                         </a>
                     </div>
-                    <div class="bottom-header-left__navigation">
+                    <div class="bottom-header__navigation">
                         <button class="nav-toggle js-toggle-open">
                             <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="60">
                                 <path class="line top"
@@ -352,7 +383,9 @@ $navigation = [
                                 <a href="#" class="global-nav__link">{{$menu['name']}}</a>
                                 @if(isset($menu['children']))
                                 <div class="global-nav__arrow">
-                                    <span class="arrow arrow-small arrow--color-grey arrow--down"></span>
+                                <svg width="10" height="10">
+                    <use xlink:href="./dist/spritemap.svg#sprite-arrow-header"></use>
+                </svg>
                                 </div>
                                 <div class="global-nav__dropdown-content">
                                     <div class="global-nav__dropdown-menu">
@@ -367,7 +400,9 @@ $navigation = [
                                                 </div>
                                                 @if(isset($item['children']))
                                                 <div class="nav__arrow">
-                                                    <span class="arrow arrow-small arrow--next-light-grey"></span>
+                                                <svg width="12" height="12">
+                    <use xlink:href="./dist/spritemap.svg#sprite-arrow-header"></use>
+                </svg>
                                                 </div>
                                                 <div class="sub-menu-container">
                                                     <div class="sub-menu-container__top">
@@ -383,9 +418,9 @@ $navigation = [
                                                                     </ul>
                                                                     @if(isset($subitem['url']))
                                                                     <div class="sub-menu__button">
-                                                                    <a href="#" class="link--arrow">
+                                                                    <a href="#" class="link link--arrow">
                                                                         <span>Смотреть все</span>
-                                                                        <span class="arrow arrow--small arrow--next-green"></span>
+                                                                        <span class="link__arrow"></span>
                                                                     </a>
 </div>
                                                                     @endif
@@ -413,8 +448,8 @@ $navigation = [
                                     </ul>
                                 </div>
                             </div>
-                            <div class="bottom-header-right">
-                                <div class="bottom-header-right__search">
+                            <div class="bottom-header__right">
+                                <div class="bottom-header__search">
                                     <div class="search">
                                         <div class="search__button">
                                             <button class="search-button js-search">
@@ -445,7 +480,7 @@ $navigation = [
                                     </div>
                                     </div>
                                 </div>
-                                <div class="bottom-header-right__buttons">
+                                <div class="bottom-header__buttons">
                                     <ul class="header-buttons">
                                         <li class="header-buttons__item">
                                             <a href="#popup-inline" class="header-button" data-popup data-type="inline">

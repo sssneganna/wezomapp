@@ -1,0 +1,31 @@
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 13px;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__city {
+    margin-right: 76px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__phone {
+    margin-right: 45px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .top-header {
+    display: none;
+  }
+}

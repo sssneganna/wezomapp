@@ -1,5 +1,4 @@
 import $ from "jquery";
-import browserizr, { isIPad, isMobile } from "@wezom/browserizr";
 
 export const slickInit = async () => {
   const $elImport = $(".js-import");
@@ -37,11 +36,11 @@ export const slickInit = async () => {
     });
 
     $(".js-btn-next").click(function () {
-      $element.slick("slickNext");
+      $(".js-slider").slick("slickNext");
     });
 
     $(".js-btn-prev").click(function () {
-      $element.slick("slickPrev");
+      $(".js-slider").slick("slickPrev");
     });
 
     $(".js-slider-for").slick({
@@ -52,6 +51,7 @@ export const slickInit = async () => {
       arrows: false,
       observer: true,
       observeParents: true,
+      dots: false,
 
       responsive: [
         {
@@ -68,33 +68,38 @@ export const slickInit = async () => {
       $(".js-slider-for").slick("slickGoTo", $(this).index());
     });
 
-    if (browserizr.detect(isIPad) || browserizr.detect(isMobile)) {
-      console.log("Yeah! Thats is IPad device");
-      mobileSlider();
-    }
-
-    /*$(window).on("resize", function () {
-      if ($(window).width() < 1025) {
-        mobileSlider();
-      }
-    });*/
-
-    function mobileSlider() {
-      $(".js-slider-product").slick({
-        swipeToSlide: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        arrows: false,
-        dots: true,
-        responsive: [
-          {
-            breakpoint: 568,
-            settings: {
-              slidesToShow: 2,
-            },
+    $(".js-slider-product").slick({
+      swipeToSlide: true,
+      slidesToShow: 6,
+      slidesToScroll: 3,
+      arrows: false,
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 1080,
+          settings: {
+            dots: true,
+            slidesToShow: 4,
+            slidesToScroll: 4,
           },
-        ],
-      });
-    }
+        },
+        {
+          breakpoint: 769,
+          settings: {
+            dots: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          },
+        },
+        {
+          breakpoint: 568,
+          settings: {
+            dots: true,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
+        },
+      ],
+    });
   }
 };

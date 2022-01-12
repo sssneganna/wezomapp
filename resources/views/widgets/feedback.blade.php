@@ -8,12 +8,14 @@ $reviews = [
   'image' => [
                 [
                     'src' => './assets/reviews-img-1.jpg',
-                    'alt' => '1'
+                    'alt' => '1',
+                    'src-big' => './assets/reviews-big-1.jpg'
                     
                 ],
                 [
                     'src' => './assets/reviews-img-2.jpg',
-                    'alt' => '2'
+                    'alt' => '2',
+                    'src-big' => './assets/reviews-big-2.jpg'
 
                 ]
 
@@ -33,7 +35,8 @@ $reviews = [
   'image' => [
                 [
                     'src' => './assets/reviews-img-3.jpg',
-                    'alt' => '1'
+                    'alt' => '1',
+                    'src-big' => './assets/reviews-big-3.jpg'
                     
                 ]
             ],
@@ -104,8 +107,8 @@ $productRating = [
     <div class="container">
         <div class="tabs js-tab">
             <ul class="tabs__buttons">
-                <li class="tabs__button tabs__button--size-medium js-tab-trigger is-active" data-tab="reviews">Отзывы (65)</li>
-                <li class="tabs__button tabs__button--size-medium js-tab-trigger" data-tab="questions">Вопросы (3)</li>
+                <li class="tabs__button tabs__button--size-medium js-tab-trigger is-active" data-type-tab="multi" data-tab="reviews">Отзывы (65)</li>
+                <li class="tabs__button tabs__button--size-medium js-tab-trigger" data-type-tab="multi" data-tab="questions">Вопросы (3)</li>
             </ul>
             <div class="tabs__content js-tab-content is-active" data-tab="reviews">
                 <div class="feedback__reviews">
@@ -138,7 +141,10 @@ $productRating = [
                                                 @if(isset($item['image']))
                                                 @foreach($item['image'] as $image)
                                                 <div class="reviews__picture-item">
+                                                    
+                                                    <a href="{{$image['src-big']}}" data-popup data-type="image">
                                                     <img src="{{$image['src']}}" alt="{{$image['alt']}}"></img>
+                                                    </a>
                                                 </div>
                                                 @endforeach
                                                 @endif

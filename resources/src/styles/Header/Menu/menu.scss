@@ -23,6 +23,8 @@
     &.active {
       color: var(--color-dark-blue-text);
       transition: all 0.3s;
+      pointer-events: none;
+      cursor: none;
     }
   }
 }

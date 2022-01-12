@@ -1,5 +1,6 @@
 @php 
 $list = [
+   
     [
         'url-image' => './assets/card-img-1.jpg',
         'name' => 'Brit Premium (Брит Премиум) by Nature ADULT - Сухой корм с курицей, 4 кг',
@@ -164,7 +165,31 @@ $list = [
                 ],
         'number' => '0'
         ]
+    
     ];
+
+$dealsMenu = [
+    [
+        'text' => 'Собакам',
+        'url' => '#',
+        'class' => 'active'
+    ],
+    [
+        'text' => 'Кошкам',
+        'url' => '#',
+        'class' => ''
+    ],
+    [
+        'text' => 'Птицам',
+        'url' => '#',
+        'class' => ''
+    ],
+    [
+        'text' => 'Грызунам',
+        'url' => '#',
+        'class' => ''
+    ],
+];
 @endphp
 
 <section class="best-deals">
@@ -174,32 +199,29 @@ $list = [
                 <h2 class="best-deals__title">Лучшие предложения недели </h2>
                 <div class="best-deals__nav">
                     <ul class="best-deals__list">
+                        @foreach($dealsMenu as $dealsItem)
                         <li class="best-deals__item">
-                            <div class="best-deals__link active">Собакам</div>
+                            <a href="{{$dealsItem['url']}}" class="best-deals__link {{$dealsItem['class']}}">{{$dealsItem['text']}}</a>
                         </li>
-                        <li class="best-deals__item">
-                            <a class="best-deals__link" href="#">Кошкам</a>
-                        </li>
-                        <li class="best-deals__item">
-                            <a class="best-deals__link" href="#">Птицам</a>
-                        </li>
-                        <li class="best-deals__item">
-                            <a class="best-deals__link" href="#">Грызунам</a>
-                        </li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
             <div class="best-deals__buttons">
                 <button class="js-btn-prev button button--size-small button--filled-grey button--square">
-                    <span class="arrow  arrow--large arrow--color-white arrow--prev"></span>
+                <svg class="button__icon-prev" width="12" height="12">
+                    <use xlink:href="./dist/spritemap.svg#sprite-arrow-header"></use>
+                </svg>
                 </button>
                 <button class="js-btn-next button button--size-small button--filled-grey  button--square">
-                    <span class="arrow  arrow--large arrow--color-white arrow--next"></span>
+                <svg class="button__icon-next" width="12" height="12">
+                    <use xlink:href="./dist/spritemap.svg#sprite-arrow-header"></use>
+                </svg>
                 </button>
             </div>
         </div>
         <div class="best-deals__slider">
-            <div class="cards js-import js-slider">
+            <div class="cards cards--slider js-import js-slider">
                 @foreach($list as $item)
                 <div class="cards__item">
                     @include("widgets.card", ['item' => $item] )

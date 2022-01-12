@@ -11,17 +11,21 @@
             </div>
             <div class="login__box">
             <button class="login__btn-back">
-                <span class="arrow arrow--prev-light-grey"></span>
+            <svg width="8" height="8">
+                    <use xlink:href="./dist/spritemap.svg#sprite-arrow-header"></use>
+                </svg>
                 <span>Ввести другой номер телефона</span>
             </button>
                 <div class="login__info">С таким номером телефона еще нет пользователей, хотите зарегистрироваться?</div>
-                <div class="login__select-field">
-                <label for="login-select">Я регистрируюсь как</label>
-                <select id="login-select" class="login__select">
+                <div class="login__select">
+                    <div class="select">
+                <label class="select__label select__label--login" for="login-select">Я регистрируюсь как</label>
+                <select id="login-select" class="select__select select__select--login">
                     <option value="private person">Частное лицо</option>
                     <option  value="legal entity">Юридическое лицо</option>
                 </select>
-                <span class="login__select-arrow"></span>
+                <span class="select__arrow select__arrow--login"></span>
+</div>
 </div>
                 <div class="login__btn">
                     <button class="button button--size-rectangle button--filled-orange" type="submit">Регистрация</button>

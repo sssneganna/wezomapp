@@ -51,8 +51,8 @@
 
   &__stickers {
     position: absolute;
-    top: 0;
-    left: 10px;
+    top: 16px;
+    left: 26px;
   }
 
   &__button {
@@ -79,6 +79,10 @@
   .product-gallery {
     &__share {
       margin-left: 0;
+    }
+
+    &__nav {
+      width: 0;
     }
   }
 }

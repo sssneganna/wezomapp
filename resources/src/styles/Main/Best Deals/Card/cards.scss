@@ -10,11 +10,24 @@
   &__item {
     display: flex;
     padding: 5px;
+
+    &--catalog {
+      width: 23%;
+      margin-right: 23px;
+      padding: 0;
+      margin-bottom: 76px;
+    }
   }
 
-  &:not(.slick-initialized) {
+  &--catalog {
+    flex-wrap: wrap;
+    margin: 0;
+    margin-right: -23px;
+    margin-bottom: -76px;
+  }
+
+  &--slider:not(.slick-initialized) {
     overflow: hidden;
-    margin-top: -25px;
 
     #{$root}__item {
       width: 20%;

@@ -23,6 +23,21 @@
     align-items: center;
     justify-content: center;
     margin-right: 12px;
+    svg {
+      stroke: var(--color-dark-blue-text);
+      stroke-width: 2px;
+    }
+
+    &--prev {
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+    &--next {
+      svg {
+        transform: rotate(-90deg);
+      }
+    }
 
     &:hover,
     &:focus {
@@ -38,6 +53,10 @@
       background: var(--color-orange);
       border-radius: 3px;
       color: var(--color-white-text);
+
+      svg {
+        stroke: white;
+      }
     }
   }
 }

@@ -36,9 +36,19 @@
     margin-right: 5px;
     padding-bottom: 5px;
 
+    svg {
+      stroke: var(--color-grey-text);
+      margin-left: 4px;
+      stroke-width: 2px;
+    }
+
     &:hover {
       color: var(--color-dark-blue-text);
       transition: color 0.3s;
+
+      svg {
+        stroke: var(--color-dark-blue-text);
+      }
     }
   }
 

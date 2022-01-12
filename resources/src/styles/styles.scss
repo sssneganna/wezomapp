@@ -16,15 +16,15 @@
 @import "./common/circle.scss";
 @import "./common/nav-toggle.scss";
 @import "./common/Inputs/quantity.scss";
+@import "./common/Inputs/select.scss";
+@import "./common/Inputs/range-slider.scss";
 @import "./common/pagination.scss";
 
 /*Header*/
 
 @import "./Header/header.scss";
-@import "./Header/top-header-left.scss";
-@import "./Header/top-header-right.scss";
-@import "./Header/bottom-header-right.scss";
-@import "./Header/bottom-header-left.scss";
+@import "./Header/top-header.scss";
+@import "./Header/bottom-header.scss";
 @import "./Header/Search/search.scss";
 @import "./Header/Search/button-close.scss";
 @import "./Header/Search/search-button.scss";
@@ -90,6 +90,8 @@
 @import "./Main/Catalog main/catalog-main.scss";
 @import "./Main/Catalog main/filter.scss";
 @import "./Main/Catalog main/catalog-page.scss";
+@import "./Main/Catalog main/catalog-selection.scss";
+@import "./Main/Catalog main/catalog-slider.scss";
 
 /*Footer*/
 @import "./Footer/Top footer/top-footer.scss";
