@@ -1,6 +1,8 @@
 .pagination {
   margin-right: -12px;
   display: flex;
+  width: 100%;
+  justify-content: center;
 
   &__more {
     color: var(--color-dark-blue-text);
@@ -57,6 +59,14 @@
       svg {
         stroke: white;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .pagination {
+    &__link {
+      margin-right: 5px;
     }
   }
 }

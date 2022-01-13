@@ -16,3 +16,15 @@
     margin-bottom: 110px;
   }
 }
+
+@media screen and (max-width: 414px) {
+  .catalog-page {
+    &__breadcrumbs {
+      margin: 16px 0 20px 0;
+    }
+
+    &__container {
+      margin-bottom: 60px;
+    }
+  }
+}

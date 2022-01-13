@@ -1,6 +1,8 @@
 .catalog-selection {
   display: flex;
   margin-right: -8px;
+  flex-wrap: wrap;
+  margin-bottom: -10px;
 
   &__item {
     margin-right: 8px;
@@ -9,6 +11,7 @@
     align-items: center;
     background: #f4f5f8;
     border-radius: 3px;
+    margin-bottom: 10px;
 
     &:hover {
       background: #ffffff;
@@ -17,6 +20,11 @@
 
     &--transparent {
       background: transparent;
+
+      &:hover {
+        background: transparent;
+        box-shadow: none;
+      }
     }
   }
 

@@ -7,7 +7,7 @@ import { createSearchResults } from "./Search/createSearchResults.js";
 import { showContent } from "./showContent.js";
 //import { InterObserver } from "./interObserver.js";
 import { openPopup } from "./Popup/popup";
-import { createToggle } from "./createToggle.js";
+import { toggleFilterMenu } from "./toggleFilterMenu.js";
 
 import { createPhoneMask } from "./jquery-mask-plugin/index.js";
 import { changeQuanity } from "./input quantity/changeQuantity.js";
@@ -23,7 +23,7 @@ slickInit();
 filterContentInit();
 createTabs();
 changeQuanity();
-createToggle();
+toggleFilterMenu();
 createPhoneMask();
 //InterObserver();
 openMenu();

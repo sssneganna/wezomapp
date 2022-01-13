@@ -166,7 +166,7 @@ $paymentList = [
                                 <div class="up-btn">
                                     <div class="up-btn__text">Вверх</div>
                                         <div class="up-btn__button">
-                                            <button class="button button--size-medium button--filled-white js-scroll-top button--dark">
+                                            <button class="button button--size-medium button--filled-white js-scroll-top button--dark button--mb-size">
                                                 <svg width="12" height="12">
                                                     <use xlink:href="./dist/spritemap.svg#sprite-arrow-btn-up">
                                                     </use>

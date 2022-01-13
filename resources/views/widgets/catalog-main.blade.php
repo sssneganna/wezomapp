@@ -406,9 +406,10 @@ $selectionList = [
 <div class="catalog-main">
     <div class="container">
         <div class="catalog-main__box">
-            <div class="catalog-main__sidebar">
+            <div class="catalog-main__sidebar js-active-content">
                 @include("widgets.catalog-filter")
             </div>
+            
             <div class="catalog-main__body">
                 <div class="catalog-main__top">
                     <div class="catalog-main__flex">
@@ -419,22 +420,25 @@ $selectionList = [
                         <div class="select">
                             <label class="select__label select__label--sorting">Сортировать по</label>
                     <select class="select__select select__select--sorting">
-  <option>Подходящим для питомца</option>
-  <option>По популярности</option>
-  <option>По возрастанию цены</option>
-  <option>По убыванию цены</option>
-</select>
-<span class="select__arrow"></span>
-</div>
+                        <option>Подходящим для питомца</option>
+                        <option>По популярности</option>
+                        <option>По возрастанию цены</option>
+                        <option>По убыванию цены</option>
+                    </select>
+                    <span class="select__arrow"></span>
+                </div>
                     </div>
                 </div>
                 <div class="catalog-main__mobile-controls">
-                    <button class="button button--filter js-is-active">
+                    <div class="catalog-main__mobile-control">
+                    <button class="button button--filter js-active-trigger">
                         <svg width="24" height="24">
                             <use xlink:href="./dist/spritemap.svg#sprite-filter-icon"></use>
                         </svg>
                         <span>Фильтр</span>
                     </button>
+                    </div>
+                    <div class="catalog-main__mobile-control">
                     <div class="button button--filter">
                         <svg width="24" height="24">
                             <use xlink:href="./dist/spritemap.svg#sprite-sorting-icon"></use>
@@ -442,20 +446,21 @@ $selectionList = [
                         <span>Сортировка</span>
                     </div>
                 </div>
+                </div>
                 <div class="catalog-main__selection">
                     <ul class="catalog-selection">
                         @foreach($selectionList as $selectionItem)
                         <li class="catalog-selection__item">
                             <a href="{{$selectionItem['url']}}" class="catalog-selection__link">{{$selectionItem['link']}}</a>
                             <button class="catalog-selection__button-remove">
-                            <svg width="10" height="10">
-                        <use xlink:href="./dist/spritemap.svg#sprite-button-close"></use>
-                    </svg>
-</button>
+                                <svg width="10" height="10">
+                                    <use xlink:href="./dist/spritemap.svg#sprite-button-close"></use>
+                                </svg>
+                            </button>
                         </li>
                         @endforeach
                         <li class="catalog-selection__item catalog-selection__item--transparent">
-<button class="button button--dashed-orange">Очистить фильтры</button>
+                            <button class="button button--dashed-orange">Очистить фильтры</button>
                         </li>
                     </ul>
                 </div>

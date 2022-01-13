@@ -40,3 +40,13 @@
     }
   }
 }
+
+@media screen and (max-width: 414px) {
+  .sub-footer {
+    flex-direction: column;
+
+    &__left {
+      margin-bottom: 10px;
+    }
+  }
+}

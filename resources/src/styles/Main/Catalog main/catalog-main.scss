@@ -29,6 +29,8 @@
   &__flex {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    margin-right: 12px;
   }
 
   &__title {
@@ -49,12 +51,21 @@
     justify-content: space-between;
     display: none;
     margin-bottom: 20px;
+    margin-right: -15px;
+  }
+
+  &__mobile-control {
+    display: flex;
+    width: 50%;
+    margin-right: 15px;
   }
 
   &__top-mob {
     display: none;
-
+    justify-content: flex-end;
     width: 100%;
+    border-bottom: 1px solid var(--color-grey-border);
+    padding: 15px 20px;
   }
 
   &__pagination {
@@ -127,7 +138,7 @@
   }
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1050px) {
   .catalog-main {
     &__body {
       width: 100%;
@@ -149,6 +160,10 @@
       display: flex;
     }
 
+    &__filter {
+      padding: 0 20px;
+    }
+
     &__sidebar {
       box-shadow: 0px 4px 12px rgb(18 33 63 / 5%);
       position: fixed;
@@ -164,6 +179,33 @@
 
       &.is-active {
         left: 0;
+      }
+
+      &.is-active .modal-background {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .catalog-main {
+    &__title {
+      font-size: 38px;
+    }
+
+    &__show-more {
+      margin: 40px 0 0 0;
+    }
+
+    &__pagination {
+      margin-top: 30px;
+    }
+
+    &__more-btn {
+      svg {
+        width: 40px;
+        height: 40px;
       }
     }
   }

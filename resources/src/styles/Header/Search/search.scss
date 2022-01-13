@@ -62,11 +62,11 @@
     margin: 0 auto;
   }
 
-  &.active &__popup {
+  &.is-active &__popup {
     display: flex;
   }
 
-  &.active .modal-background {
+  &.is-active .modal-background {
     display: block;
   }
 

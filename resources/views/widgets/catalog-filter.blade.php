@@ -215,37 +215,34 @@ $filterList = [
 @endphp
 
 <div class="catalog-main__top-mob">
-    <button class="button-close js-is-active"></button>
-   
+    <button class="button-close js-active-trigger"></button>
 </div>
 <div class="catalog-main__add-pet">
-@include("widgets.add-pet")
+    @include("widgets.add-pet")
 </div>
-<div class="filter">
-    @foreach($filterMenu as $menu)
-  
-   
-    <div class="filter__item">
-        <div class="filter__title">{{$menu['title']}}</div>
-
-        <div class="filter__categories">
-        @foreach($menu['categories'] as $category)
-            <a href="{{$category['href']}}" class="filter__category">
-                <span>{{$category['category']}}</span>
-                <span class="filter__category-number">({{$category['number']}})</span>
-            </a>
-            @endforeach
+<div class="catalog-main__filter">
+    <div class="filter">
+        @foreach($filterMenu as $menu)
+        <div class="filter__item">
+            <div class="filter__title">{{$menu['title']}}</div>
+            <div class="filter__categories">
+                 @foreach($menu['categories'] as $category)
+                 <a href="{{$category['href']}}" class="filter__category">
+                     <span>{{$category['category']}}</span>
+                     <span class="filter__category-number">({{$category['number']}})</span>
+                </a>
+                @endforeach
+                </div>
         </div>
-</div>
-</div>
+    </div>
 @endforeach
 <div class="filter">
     <div class="filter__item">
         <a href="#" class="filter__value is-active">
-    <svg class="card__icon" width="32" height="32">
+            <svg class="card__icon" width="32" height="32">
                     <use xlink:href="./dist/spritemap.svg#sprite-price-icon"></use>
-                </svg>
-                <span class="filter__auto-order">Автозаказ</span>
+            </svg>
+            <span class="filter__auto-order">Автозаказ</span>
                 <svg width="14" height="14">
                                         <use xlink:href="./dist/spritemap.svg#sprite-price-icon-info"></use>
                                     </svg>  
@@ -306,4 +303,5 @@ $filterList = [
 
     
     @endforeach
+    </div>
     </div>

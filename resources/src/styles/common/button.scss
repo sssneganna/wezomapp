@@ -90,7 +90,7 @@
   }
 
   &--filter {
-    width: 50%;
+    width: 100%;
     height: 48px;
     background: #ffffff;
     box-shadow: 0px 2px 8px rgba(32, 36, 84, 0.15);
@@ -100,6 +100,18 @@
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: var(--color-orange);
+      color: white;
+      transition: all 0.3s;
+      svg {
+        fill: var(--color-white-text);
+        color: var(--color-white-text);
+      }
+    }
 
     svg {
       fill: var(--color-dark-blue-text);
@@ -265,6 +277,23 @@
   .button {
     &--size-large {
       --btn-size: 62px;
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .button {
+    &--size-medium {
+      --btn-size: 38px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &--mb-size {
+      --btn-size: 48px;
     }
   }
 }

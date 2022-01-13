@@ -450,9 +450,9 @@ $languageList = [
                             </div>
                             <div class="bottom-header__right">
                                 <div class="bottom-header__search">
-                                    <div class="search">
+                                    <div class="search js-is-active-content">
                                         <div class="search__button">
-                                            <button class="search-button js-search">
+                                            <button class="search-button js-is-active">
                                                 <svg class="search-button__icon" width="32" height="32">
                                                     <use xlink:href="./dist/spritemap.svg#sprite-search-icon"></use>
                                                 </svg>
@@ -468,7 +468,7 @@ $languageList = [
                                                 <div class="search__field">
                                                     <input autocomplete="off" class="search__input" value="" id="search" name="search" placeholder="Поиск ..." type="text" required />
                                                     <div class="search__button-close">
-                                                        <button class="button-close js-search"></button>
+                                                        <button class="button-close js-is-active"></button>
                                                     </div>
                                                 </div>
                                                 </div>
