@@ -1,17 +1,134 @@
+@php
+$languageList = [
+    [
+        'lang' => 'укр',
+        'url' => '#',
+        'class' => ''
+    ],
+    [
+        'lang' => 'рус',
+        'url' => '#',
+        'class' => 'active'
+    ],
+    [
+        'lang' => 'eng',
+        'url' => '#',
+        'class' => ''
+    ],
+];
+
+$mobNavigation = [
+    [ 
+        'name' => 'Товары по питомцам',
+        'url' => '#',
+        'class' => 'active'
+    ],
+    [ 
+        'name' => 'Бренды',
+        'url' => '#',
+        'class' => ''
+    ],
+    [ 
+        'name' => 'Ветаптека',
+        'url' => '#',
+        'class' => ''
+    ],
+    [ 
+        'name' => 'Найди друга',
+        'url' => '#',
+        'class' => ''
+    ],
+    [ 
+        'name' => 'Ветклиники',
+        'url' => '#',
+        'class' => ''
+    ],
+];
+
+$companyList = [
+        [
+            'text' => 'О компании', 
+            'url' => '#'
+        ],
+        [
+            'text' => 'Адреса магазинов «ZooBonus»', 
+            'url' => '#'
+        ],
+        [
+            'text' => 'Вакансии', 
+            'url' => '#'
+        ],
+        [
+            'text' => 'Благотворительность', 
+            'url' => '#'
+        ],
+        [
+            'text' => 'Контакты', 
+            'url' => '#'
+        ],
+];
+
+$customerList = [
+    [
+        'text' => 'Доставка и оплата', 
+        'url' => '#'
+    ],
+    [
+        'text' => 'FAQ', 
+        'url' => '#'
+    ],
+    [
+        'text' => 'Подарочные сертификаты', 
+        'url' => '#'
+    ],
+    [
+        'text' => 'Акции', 
+        'url' => '#'
+    ],
+    [
+        'text' => 'Породы животных', 
+        'url' => '#'
+    ],
+    [
+        'text' => 'Дисконтная программа', 
+        'url' => '#'
+    ],
+    [
+        'text' => 'Блог', 
+        'url' => '#'
+    ],
+    [
+        'text' => 'Фотогалерея', 
+        'url' => '#'
+    ],
+];
+
+$phoneList = [
+    [
+        'href' => 'tel:+380444903100',
+        'number' => '(044) 490 31 00'
+    ],
+    [
+        'href' => 'tel:+380444903105',
+        'number' => '(044) 490 31 05'
+    ],
+    [
+        'href' => 'tel:+380444903180',
+        'number' => '(044) 490 31 80'
+    ],
+];
+@endphp
+
 <div class="modal-background"></div>
     <nav class="mm-menu">
         <div class="mm-menu__header">
             <div class="mm-menu-header">
                 <ul class="language">
-                    <li class="language__item language__item--mobile">
-                        <div class="language__link language__link--mobile active">укр</div>
-                    </li>
-                    <li class="language__item language__item--mobile">
-                        <a class="language__link language__link--mobile" href="#">рус</a>
-                    </li>
-                    <li class="language__item language__item--mobile">
-                        <a class="language__link language__link--mobile" href="#">eng</a>
-                    </li>
+                    @foreach($languageList as $languageItem)
+                        <li class="language__item language__item--mobile">
+                            <a href="{{$languageItem['url']}}" class="language__link language__link--mobile {{$languageItem['class']}}">{{$languageItem['lang']}}</a>
+                        </li>
+                    @endforeach
                 </ul>
             </div>
         </div>
@@ -19,92 +136,36 @@
             <div class="global-navigation">
                 <div class="global-navigation__top">
                     <ul class="global-nav global-nav--mobile">
+                        @foreach($mobNavigation as $menu)
                         <li class="global-nav__item global-nav__item--mobile">
-                            <div class="global-nav__link global-nav__link--mobile active">
-                                Товары по
-                                питомцам</div>
+                            <a href="{{$menu['url']}}" class="global-nav__link global-nav__link--mobile {{$menu['class']}}">{{$menu['name']}}</a>
                         </li>
-                        <li class="global-nav__item global-nav__item--mobile">
-                            <a class="global-nav__link global-nav__link--mobile" href="#">Бренды</a>
-                        </li>
-                        <li class="global-nav__item global-nav__item--mobile">
-                            <a class="global-nav__link global-nav__link--mobile" href="#">Ветаптека</a>
-                        </li>
-                        <li class="global-nav__item global-nav__item--mobile">
-                            <a class="global-nav__link global-nav__link--mobile" href="#">Найди друга</a>
-                        </li>
-                        <li class="global-nav__item global-nav__item--mobile">
-                            <a class="global-nav__link global-nav__link--mobile" href="#">Ветклиники</a>
-                        </li>
+                        @endforeach
                     </ul>
                 </div>
                 <div class="global-navigation__bottom">
                     <div class="mobile-menu">
                         <div class="mobile-menu__top">
                             <div class="navigation">
-                                <h2 class="navigation__title navigation__title--mmenu">
-                                    Компания </h2>
-
+                                <h2 class="navigation__title navigation__title--mmenu">Компания</h2>
                                 <ul class="navigation__list">
-                                    <li class="navigation__item navigation__item--mmenu">
-                                        <a href="#" class="navigation__link navigation__link--mmenu">О
-                                            компании
-                                        </a>
-                                    </li>
-                                    <li class="navigation__item navigation__item--mmenu">
-                                        <a href="#" class="navigation__link navigation__link--mmenu">Адреса
-                                            магазинов «ZooBonus»</a>
-                                    </li>
-                                    <li class="navigation__item navigation__item--mmenu">
-                                        <a href="#" class="navigation__link navigation__link--mmenu">Вакансии</a>
-                                    </li>
-                                    <li class="navigation__item navigation__item--mmenu">
-                                        <a href="#"
-                                            class="navigation__link navigation__link--mmenu">Благотворительность</a>
-                                    </li>
-                                    <li class="navigation__item navigation__item--mmenu">
-                                        <a href="#" class="navigation__link navigation__link--mmenu">Контакты
-                                        </a>
-                                    </li>
+                                    @foreach($companyList as $item) 
+                                        <li class="navigation__item navigation__item--mmenu">
+                                            <a href="{{$item['url']}}" class="navigation__link navigation__link--mmenu">{{$item['text']}} </a>
+                                        </li>
+                                    @endforeach
                                 </ul>
-
                             </div>
                         </div>
                         <div class="mobile-menu__center">
                             <div class="navigation">
-                                <h2 class="navigation__title navigation__title--mmenu">
-                                    Покупателям </h2>
-
+                                <h2 class="navigation__title navigation__title--mmenu">Покупателям </h2>
                                 <ul class="navigation__list">
-                                    <li class="navigation__item navigation__item--mmenu">
-                                        <a href="#" class="navigation__link navigation__link--mmenu">Доставка
-                                            и
-                                            оплата</a>
-                                    </li>
-                                    <li class="navigation__item navigation__item--mmenu">
-                                        <a href="#" class="navigation__link navigation__link--mmenu">FAQ</a>
-                                    </li>
-                                    <li class="navigation__item navigation__item--mmenu">
-                                        <a href="#" class="navigation__link navigation__link--mmenu">Подарочные
-                                            сертификаты</a>
-                                    </li>
-                                    <li class="navigation__item navigation__item--mmenu">
-                                        <a href="#" class="navigation__link navigation__link--mmenu">Акции</a>
-                                    </li>
-                                    <li class="navigation__item navigation__item--mmenu">
-                                        <a href="#" class="navigation__link navigation__link--mmenu">Породы
-                                            животных</a>
-                                    </li>
-                                    <li class="navigation__item navigation__item--mmenu">
-                                        <a href="#" class="navigation__link navigation__link--mmenu">Дисконтная
-                                            программа</a>
-                                    </li>
-                                    <li class="navigation__item navigation__item--mmenu">
-                                        <a href="#" class="navigation__link navigation__link--mmenu">Блог</a>
-                                    </li>
-                                    <li class="navigation__item navigation__item--mmenu">
-                                        <a href="#" class="navigation__link navigation__link--mmenu">Фотогалерея</a>
-                                    </li>
+                                    @foreach($customerList as $item) 
+                                        <li class="navigation__item navigation__item--mmenu">
+                                            <a href="{{$item['url']}}" class="navigation__link--mmenu">{{$item['text']}}</a>
+                                        </li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>
@@ -121,50 +182,25 @@
                                     Контакты</h2>
                                 <ul class="contacts__list">
                                     <li class="contacts__item contacts__item--margin">
-                                        
-                                            <div class="contacts__text contacts__text--mmenu">
-                                                Информационная
-                                                служба:</div>
-                                            <div class="contacts__number contacts__number--mobile">
-                                                <ul class="phone-mobile">
+                                        <div class="contacts__text contacts__text--mmenu">Информационная служба:</div>
+                                        <div class="contacts__number contacts__number--mobile">
+                                            <ul class="phone-mobile">
+                                                @foreach($phoneList as $phoneItem)
                                                     <li class="phone-mobile__item">
-                                                        <a class="phone-mobile__link" href="tel:+380444903100">
-                                                            <span>(044) 490 31 00</span>
+                                                        <a class="phone-mobile__link" href="{{$phoneItem['href']}}">
+                                                            <span>{{$phoneItem['number']}}</span>
                                                         </a>
                                                     </li>
-                                                    <li class="phone-mobile__item">
-                                                        <a class="phone-mobile__link" href="tel:+380444903105">
-                                                            <span>(044) 490 31 05</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="phone-mobile__item">
-                                                        <a class="phone-mobile__link" href="tel:+380444903180">
-                                                            <span>(044) 490 31 80</span>
-                                                        </a>
-                                                    </li>
+                                                @endforeach
                                                 </ul>
-
                                             </div>
-                                        
-                                    </li>
+                                        </li>
                                     <li class="contacts__item contacts__item--margin">
-                                        
-                                            <div
-                                                class="contacts__text contacts__text--opacity contacts__text--mmenu">
-                                                Ежедневно с
-                                                08:30-21:00</div>
-                                       
+                                        <div class="contacts__text contacts__text--opacity contacts__text--mmenu">Ежедневно с 08:30-21:00</div>
                                     </li>
                                     <li class="contacts__item">
-                                        
-                                            <span
-                                                class="contacts__text contacts__text--opacity contacts__text--mmenu">Email:</span>
-
-                                            <a class="contacts__mail contacts__mail--mmenu"
-                                                href="mailto:info@wezom.com.ua">
-                                                info@wezom.com.ua
-                                            </a>
-                                       
+                                        <span class="contacts__text contacts__text--opacity contacts__text--mmenu">Email:</span>
+                                        <a class="contacts__mail contacts__mail--mmenu" href="mailto:info@wezom.com.ua">info@wezom.com.ua</a>
                                     </li>
                                 </ul>
                             </div>
