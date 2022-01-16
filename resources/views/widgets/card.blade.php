@@ -7,7 +7,10 @@
         </div>
     </div>
     <a href="#" class="card__image">
-        <img  src="{{$item['url-image']}}" alt="1">
+        <img  class="card__img" src="{{$item['url-image']}}" alt="1">
+        @if(isset($item['img-pet']))
+        <img class="card__img-pet" src="{{$item['img-pet']}}" alt="add-pet-bg">
+        @endif
     </a>
     <a href="#" class="card__text">{{$item['name']}}</a>
     <div class="card__rating">

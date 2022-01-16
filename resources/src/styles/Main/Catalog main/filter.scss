@@ -54,6 +54,10 @@
     width: 100%;
     margin-bottom: 18px;
 
+    &.is-hide {
+      display: none;
+    }
+
     &::before {
       cursor: pointer;
       content: "";

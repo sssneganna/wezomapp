@@ -56,7 +56,6 @@
     --btn-size: auto;
 
     &:hover,
-    &:focus,
     &:active {
       color: var(--color-green);
       transition: all 0.3s;

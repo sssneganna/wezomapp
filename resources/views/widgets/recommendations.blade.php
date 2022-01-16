@@ -51,7 +51,7 @@ $recommendationsList = [
         <div class="recommendations__list js-import js-slider-product">
         @foreach($recommendationsList as $item)
         <div class="recommendations__item">
-            <div class="product-recommendations js-height">
+            <div class="product-recommendations">
                 <a href="{{$item['url']}}" class="product-recommendations__image">
                     <span class="product-recommendations__img">
                         <img src="{{$item['url-image']}}" alt="1"></img>

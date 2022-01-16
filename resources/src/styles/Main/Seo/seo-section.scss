@@ -12,18 +12,6 @@
     &.active #{$root}__content::after {
       display: none;
     }
-
-    &.active #{$root}__button--show {
-      display: none;
-    }
-
-    &.active #{$root}__button--hide {
-      display: block;
-    }
-  }
-
-  &__button--hide {
-    display: none;
   }
 
   &__content {

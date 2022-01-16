@@ -7,6 +7,7 @@ $list = [
         'old-price' => '1 700,22',
         'new-price' => '1600,22₴',
         'rating' => 0,
+        'img-pet' => '/assets/add-pet-dog.png',
         'sticker' => [
             [
                 'text' => 'Новинка', 
@@ -20,9 +21,10 @@ $list = [
         'url-image' => './assets/card-img-2.jpg',
         'name' => 'Schesir Dog Small Adult Lamb сухой монопротеиновый корм для собак малых пород',
         'profitable' => 'от 198,22 ₴',
-        'old-price' => 'от 260,22',
+        'old-price' => '',
         'new-price' => 'от 206,71 ₴',
         'rating' => 5,
+        'img-pet' => '/assets/add-pet-dog.png',
         'sticker' => [
        
             ],
@@ -35,6 +37,7 @@ $list = [
         'old-price' => '',
         'new-price' => '1 600,22 ₴',
         'rating' => 3,
+        'img-pet' => '/assets/add-pet-dog.png',
         'sticker' => [
             [
                 'text' => 'Новинка', 
@@ -50,6 +53,7 @@ $list = [
         'old-price' => '640,22',
         'new-price' => '560,22 ₴',
         'rating' => 0,
+        'img-pet' => '/assets/add-pet-dog.png',
         'sticker' => [
             [
                 'text' => 'ТОП продаж', 
@@ -73,6 +77,7 @@ $list = [
         'old-price' => '1 700,22',
         'new-price' => '1600,22₴',
         'rating' => 0,
+        'img-pet' => '/assets/add-pet-dog.png',
         'sticker' => [
             [
                 'text' => 'Новинка', 
@@ -89,6 +94,7 @@ $list = [
         'old-price' => 'от 260,22',
         'new-price' => 'от 206,71 ₴',
         'rating' => 5,
+        'img-pet' => '/assets/add-pet-dog.png',
         'sticker' => [
        
             ],
