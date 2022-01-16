@@ -322,16 +322,16 @@ $filterList = [
                     <use xlink:href="./dist/spritemap.svg#sprite-arrow-filter"></use>
                 </svg>
             </div>
-            <div class="filter__values accordion__content accordion__content--filter js-tab-content {{$item['class']}}" data-tab="{{$item['data-content']}}">
+            <div class="filter__values js-filter accordion__content accordion__content--filter js-tab-content {{$item['class']}}" data-tab="{{$item['data-content']}}">
             @if(isset ($item['value']))
             @foreach($item['value'] as $value) 
-                <a href="{{$value['href']}}" class="{{$value['class']}}" data-hide="{{$value['data-hide']}}">
+                <a href="{{$value['href']}}" class="{{$value['class']}} js-filter-value" data-hide="{{$value['data-hide']}}">
                     <span>{{$value['name']}}</span>
                     <span class="filter__value-number">({{$value['number']}})</span>      
                 </a>
             @endforeach
             @if(isset ($item['button']))
-                <button class="filter__button-show">+ показать все</button>
+                <button class="filter__button-show js-filter-btn">+ показать все</button>
             @endif
             @endif  
             @if(isset ($item['range-slider']))

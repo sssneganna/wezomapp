@@ -1,9 +1,9 @@
 export const createFilter = () => {
-  if ($(".filter__values").find(".filter__value is-hide")) {
-    $(".filter__values").on("click", ".filter__button-show", function () {
+  if ($(".js-filter").find(".js-filter-value is-hide")) {
+    $(".js-filter").on("click", ".js-filter-btn", function () {
       $(this)
-        .closest(".filter__values")
-        .find('.filter__value[data-hide="true"]')
+        .closest(".js-filter")
+        .find('.js-filter-value[data-hide="true"]')
         .toggleClass("is-hide");
       $(this).toggleClass("open");
 
